@@ -3,17 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chack</title>
+    <title>Chak</title>
+    <link rel="icon" 
+      type="image/png" 
+      href="images/logo/favicon.ico">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
     <link rel="stylesheet" href="style/style.css">
     <script src="js/scroll.js"></script>
+    
 </head>
   <body>
     <main class="container-fluid p-0 m-0 fixed-top">
       <nav class="navbar navbar-expand-lg p-4 m-0 navbar-dark" id="nav">
-          <a class="navbar-brand text-uppercase h1" href="index.html">Logo</a>
+          <a class="navbar-brand text-uppercase h1" href="index.html">
+            <img src="images/logo/logo-nav.png" alt="" class="logo">
+          </a>
           <button class="navbar-toggler" style="outline: none;" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" onclick="changeColor();">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -48,32 +57,40 @@
               </nav>
             </main>
                 <!-- Modal -->
-                <div class="modal fade " id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">User login</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog position-relative" role="document">
+                  
+                <div class="circle position-absolute mx-auto"><img src="images/logo/logo-login-02.png" alt="logo" class="logo-login"></div>
+                <div class="modal-content ">
+                <div class="modal-header position-relative">
+                <h5 class="modal-title text-center m-0 mx-auto position-absolute"  style="width: 100%; left: 0;" id="exampleModalLabel">Log in</h5>
+                    <button type="button" class="close m-0 p-0 text-right position-absolute" data-dismiss="modal" aria-label="Close" style="width: 100%; right: 20px;">
                     <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
                 
                 <!-- Modal text -->
-                <form class=" p-4">
+                <form>
                   <div class="form-group">
-                    <label for="exampleInputEmail1">Email address</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                    <label for="exampleInputEmail1">
+                      <span class="material-icons">
+                        local_post_office</span>
+                      User Name or Email address</label>
+                    <input type="email" class="form-control mt-1" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter  User name or Email">
                   </div>
                   <div class="form-group">
-                    <label for="exampleInputPassword1">Password</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                    <label for="exampleInputPassword1">
+                      <span class="material-icons">
+                        vpn_key
+                        </span>
+                      Password</label>
+                    <input type="password" class="form-control mt-1" id="exampleInputPassword1" placeholder="Password">
                   </div>
                   
-                  <button type="submit" class="btn btn-primary ">Sign in</button>
+                  <button type="submit" class="btn btn-secondary w-100 mt-3">Log in</button>
                 </form>
-              <div class="modal-footer">
-               <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-danger">Create account</button>
+              <div class="modal-footer text-center mx-auto">
+              <p>Looking to <a href="#"> create an account ?</a></p>
             </div>
           </div>
         </div>
@@ -81,11 +98,7 @@
  
  <!-- slideshow -->
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-        </ol>
+       
         <div class="carousel-inner">
           <div class="carousel-item active">
             <img src="images/Pictures-bigsize/mahbod-akhzami-1x2lGnZAgyQ-unsplash.jpg" class="d-block w-100" alt="...">
@@ -104,87 +117,105 @@
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="sr-only">Next</span>
           </a>
+          <div class="scroll-wrap">
+            <a class="scroll" href="#next-section">
+                <span></span>
+                <div class="box">
+                    <div class="arrowWrap">
+                    <div class="scroll"><h1>Scroll</h1>
+                      <div class="arrow">
+                        <span></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+             </a>
+            </div>
         </div>
         </div>
     </div>
     <!-- Restaurant concept-->
+    <div class="concept">
     <div class="container-fluid">
-        <div class="mx-auto text-center mt-5" style="width:70%;">
+        <div class="concept-text mx-auto text-center">
         <h2>Restaurant concept</h2>
         <p>Chak is a Persian restaurant located in Downtown Vancouver & North Vancouver with more than 15 years of experience in giving high-quality Persian foods or Persian cuisine & Persian kebabs both in Vancouver and Tehran. Khghan is proud to provide traditional food and cuisine for people who are striving for the fresh Mediterranean and Persian foods & kebabs in a cosy environment as well as being and enjoying in the heart of the city in the downtown of Vancouver and North Vancouver.
         </p>
         </div>
     </div>
+  </div>
     <!-- Reservation -->
+    <div class="reservation fixed-bg bg01">
     <div class="container-fluid">
-        <div class="mx-auto text-center mt-5" style="width:70%;">
+        <div class="mx-auto text-center" style="width:70%;">
         <h2>Eat together</h2>
-        <p>Every plate achieves that elusive, cuisine-defining balance of sweet, </br>salty,and sour-even dessert.
+        <p>Every plate achieves that elusive, cuisine-defining balance of sweet,</br>salty,and sour-even dessert.
         </p>
-        <a class="btn btn-light btn-lg" href="reservation.html" role="button">Make a Reservation</a>
+        <a class="push btn btn-light btn-lg p-3" href="reservation.html" role="button">Make a Reservation</a>
         </div>
     </div>
+  </div>
     <!-- Gallery -->
     <div class="container-fluid p-0 mt-5 mx-auto" style="max-width: 90%;">
             <div class="row p-0">
-                <div class="col-8">
+                <div class="col-lg-8">
                     <div class="row">
-                        <div class="col-6 p-0 m-0">
-                        <img src="images/Persian food photos/starter/kashke bademjoon.jpg" alt="" class="img-fluid h-auto w-100 p-0 m-0">
+                        <div class="gallery col-lg-6 col-md-4 p-0 m-0">
+                        <img src="images/Persian food photos/starter/kashke bademjoon.jpg" alt="" class="gallery-img img-fluid h-auto w-100 p-0 m-0">
                         </div>
-                        <div class="col-6 p-0 m-0">
+                        <div class="gallery col-lg-6 col-md-4 p-0 m-0">
                             <img src="images/Persian food photos/dessert/halva.jpg" alt="" class="img-fluid h-100 w-100 p-0 m-0">
                         </div>
-                        <div class="col-12 p-0 m-0">
-                            <img src="images/Persian food photos/starter/mirza ghasemi.jpg" alt="" class="img-fluid h-auto w-100 p-0 m-0">
+                        <div class="gallery col-lg-12 col-md-4 order-md-2 p-0 m-0">
+                            <img src="images/Persian food photos/starter/mirza ghasemi.jpg" alt="" class="img-fluid h-100 w-100 p-0 m-0">
                         </div>
                     </div>
                 </div>
-                <div class="col-4 p-0 m-0">
+                <div class="gallery col-lg-4 col-md-12 p-0 m-0">
                     <img src="images/Pictures-bigsize/lunar-rose-studio-YJ1HPtlDcpE-unsplash.jpg" alt="" class="img-fluid h-100 w-100 p-0 m-0 ">
                 </div>
             </div>
         </div>
         
     <!-- Hour -->
-    <div class="container-fluid  p-0 mt-5 mx-auto text-center " style="max-width: 90%;">
-        <did class="row justify-content-around">
-            <div class="col-2">
-                <h2 style="border-bottom: 1px solid rgb(53, 48, 45);">Lunch</h2>
+    <div class="hour container-fluid  p-0 mt-5 mx-auto text-center " style="max-width: 90%;">
+        <did class="hour-container row justify-content-around">
+            <div class="col-md-3">
+                <h2>Lunch</h2>
                 <p><b>Tuesday to Friday</b></br>
                     11:30 AM to 3 PM</br>
                     <b>Saturday</b></br>
                     11:30 PM to 5 PM</p>
             </div>
-            <div class="col-2">
-                <h2 style="border-bottom: 1px solid #35302d;">Dinner</h2>
+            <div class="col-md-3">
+                <h2>Dinner</h2>
                 <p><b>Tuesday to Friday</b></br>
                     5 PM to 9 PM</br>
                     <b>Saturday</b></br>
                     5 PM to 11 PM</p>
             </div>
-            <div class="col-2">
-                <h2 style="border-bottom: 1px solid rgb(53, 48, 45);">Dessert</h2>
+            <div class="col-md-3">
+                <h2>Dessert</h2>
                 <p><b>Tuesday to Friday</b></br>
                     11:30 AM to 9 PM</br>
                     <b>Saturday</b></br>
                     11:30 PM to 9 PM</p>
             </div>
-            <div class="col-2">
-                <h2 style="border-bottom: 1px solid rgb(53, 48, 45);">Drink</h2>
+            <div class="col-md-3">
+                <h2>Drink</h2>
                 <p><b>Tuesday to Friday</b></br>
                     11:30 AM to 9 PM</br>
                     <b>Saturday</b></br>
                     11:30 PM to 9 PM</p>
             </div>
         </did>
-        <a class="btn btn-light btn-lg m-5" href="reservation.html" role="button">See Menu</a>
+        <a class="hour-btn btn btn-light btn-lg m-5" href="reservation.html" role="button">See Menu</a>
         </div>
     </div>
     <!-- footer -->
     <footer class="container-fluid d-flex justify-content-between text-white p-5 mt-5 " style="background-color: rgb(53, 48, 45);">
         <div class="col-3">
-            <p  style="font-size: 14px"><b style="font-size: 13px; font-weight: 700;" >Location:</b></br>
+            <p style="font-size: 14px"><b style="font-size: 13px; font-weight: 700;" >Location:</b></br>
                 AA street, Vancouver, BC CANADA 1A2 B3C</br>
                 <b style="font-size: 13px; font-weight: 700;">Open Hours:</b></br>
                 11:30 PM to 9 PM Tue-Sun Monday Closed</br>
@@ -193,9 +224,20 @@
                 604 000 0000
             </p>
         </div>
-        <div class="col-3">
+        <div class="col-3 text-right d-flex align-items-end">
             <div class="row">
-              <div class="col"></div>
+              <div class="footer-logo col-12 p-0">
+                <img src="images/logo/logo-nav.png" alt="" class="mr-0">
+              </div>
+              <div class="col-12">
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-facebook-square"></i>
+              </div>
+              <div class="col-12">
+                <p  style="font-size: 13px;">copy right &copy; 2020 Chak persian.</p>
+                <img src="" alt="">
+              </div>
+
               
             </div>
         </div>
