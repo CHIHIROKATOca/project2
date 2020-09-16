@@ -1,5 +1,4 @@
 /* ---------basic setting--------- */
-
 html{
     box-sizing: border-box;
 }
@@ -7,16 +6,35 @@ html{
 *, 
 *:before , *:after {
     box-sizing: inherit;
+
 }
 
 body {
     font-family: 'Roboto', sans-serif;
-    font-family: 'Playfair Display', serif;
-    margin: 0;
-
+    font-weight: 300;
+    margin:0 auto;
+    padding:0;
+    height:2000px;
 } 
+main{
+    margin:0 auto;
+    padding:0;
+}
+
+p{
+    margin:0 auto;
+    padding:0;
+}
+
+h1,h2,h3{
+    font-family: 'Playfair Display', serif;
+    margin:0 auto;
+    padding:0;
+}
+
 img {
     max-width:100%;
+    margin:0 auto;
     height:auto;
     display: block;
 }
@@ -32,4 +50,34 @@ img {
     border: 0;
 }
 
-/* ------------------------------------ */
+.container{
+    margin:0 auto;
+}
+
+/* --------------Navigation-------------- */
+
+nav{
+    transition: 1s;
+    background-color: none;
+    color:white;
+  }
+
+nav a{
+    transition: 1s;
+    color:white;
+  }
+
+nav a:hover{
+    color:rgb(255, 255, 255, 1);
+  }
+
+.navbar {
+    color: #ffffff;
+  }
+
+/* --------------Hour-------------- */
+
+.col-2 h2{
+    font-size:1.3rem;
+}
+
