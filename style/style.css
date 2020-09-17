@@ -2,14 +2,10 @@
 html{
     box-sizing: border-box;
 }
-
 *, 
 *:before , *:after {
     box-sizing: inherit;
-
 }
-
-
 body {
     font-family: 'Roboto', sans-serif;
     letter-spacing:0.05em;
@@ -17,18 +13,16 @@ body {
     color:rgb(72, 71, 66);
     margin:0 auto;
     padding:0;
-    height:2000px;
+    height: 100vh;
 } 
 main{
     margin:0 auto;
     padding:0;
 }
-
 p{
     margin:0 auto;
     padding:0;
 }
-
 h1,h2,h3{
     font-family: 'Playfair Display', serif;
     letter-spacing:0.1em;
@@ -36,14 +30,12 @@ h1,h2,h3{
     margin:0 auto;
     padding:0;
 }
-
 img {
     max-width:100%;
     margin:0 auto;
     height:auto;
     display: block;
 }
-
 .sr-only {
     position: absolute;
     width: 1px;
@@ -54,43 +46,55 @@ img {
     clip: rect(0,0,0,0);
     border: 0;
 }
-
 .container{
     margin:0 auto;
 }
-
+/* -----loading----- */
+.hidden{
+    display: none;
+}
+.loading-img{
+    width: 200px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#showloading{
+    width: 100%;
+    height: 100vh;
+    background-color:  #EBDFDF;
+    position: relative;
+}
+#showloading lottie-player{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 /* --------------Navigation-------------- */
-
 nav{
     transition: 1s;
     background-color: none;
     color:white;
     font-weight: 400;
   }
-
 nav a{
     transition: 1s;
     color:white;
   }
-
 nav a:hover{
     color:rgb(255, 255, 255, 1);
   }
-
 .navbar .logo{
     width: 100px;
     height: auto;
     margin: 0;
     padding: 0;
   }
-
-.navbar
-
 .collapse .navbar-collapse{
     background-color:green;
 }
-
-
 /* --------------Slide show-------------- */
 .carousel-inner{
     width: 100%;
@@ -98,30 +102,45 @@ nav a:hover{
     padding:0;
     margin:0 auto;
 }
-
 .carousel-item::before{
     content: '';
     background-color: rgb(250, 208, 196, 0.1);
-    background-image: linear-gradient(315deg, rgb(250, 208, 196, 0.1) 0%, rgb(241, 167, 241 ,0.1) 50%);
+    background-image: linear-gradient(315deg, rgba(147, 66, 44, 0.1) 0%, rgba(75, 35, 75, 0.3) 50%);
     position: absolute;
     left: 0;
     right: 0;
     top: 0;
     bottom: 0;
 }
+.carousel .slide{
+    position: relative;
+    width: 100%;
+    max-height: 700px;
+    padding:0;
+    margin:0 auto;
+    object-fit: cover;
+}
 
-
+.img-slide{
+    position: absolute;
+    z-index: 100;
+    left: 0;
+    right: 0;
+    top: -100px;
+    bottom: 0;
+    width: 85%;
+    height: auto;
+    margin: 0 auto;
+    
+}
 /* --------------scroll animation-------------- */
-
 .scroll-wrap{
     position: absolute;
     bottom: 5%;
     left: 50%;
     transform: translateY(-50%) translateX(-50%);
     margin: auto;
-    
 }
-
 .scroll{
     color: white;
     text-decoration: none;
@@ -136,7 +155,6 @@ nav a:hover{
   margin:0 auto;
   text-align: center;
 }
-
 .arrowWrap h1{
     text-align: center;
     font-size:13px;
@@ -144,20 +162,17 @@ nav a:hover{
     padding-bottom:15px;
     margin:0 auto;
 }
-
 .arrow {
   width: 15px;
   margin: 0 auto 0px;
   -webkit-animation: arrow 0.8s cubic-bezier(0.215, 0.61, 0.355, 1) 0s infinite alternate;
   animation: arrow 0.8s cubic-bezier(0.215, 0.61, 0.355, 1) 0s infinite alternate;
 }
-
 .arrow span {
   position: relative;
   display: block;
   left: 50%;
 }
-
 .arrow span:before {
   content: '';
   width: 15px;
@@ -174,37 +189,31 @@ nav a:hover{
   left: 0;
   margin: auto;
   box-sizing: border-box;
-}
-
+  }
 @keyframes arrow {
   0% {
     opacity: 1;
     -webkit-transform: translate3d(-50%, 0, 0);
     transform: translate3d(-50%, 0, 0);
   }
-
   100% {
     opacity: 0.5;
     -webkit-transform: translate3d(-50%, -8px, 0);
     transform: translate3d(-50%, -8px, 0);
   }
 }
-
 /* --------------Modal-------------- */
 .form-group .form-control{
     box-shadow: inset 0 0 5px rgba(162, 162, 162, 0.8);
     background-color: rgb(228, 228, 228);
     border: none;
 }
-
 .form-control::placeholder{
     color: #c4c4c4;
   }
-
 form{
     padding:40px;
 }
-
 label{
     margin:0;
     vertical-align: middle;
@@ -221,28 +230,27 @@ label{
     margin-top: 200px;
 }
 .circle{
-    width: 150px;
-    height: 150px;
-    background-color: rgb(255, 255, 255);
-    border-radius: 50%;
-    top: -80px; 
+    width: 110px;
+    height: 110px;
+    background-color: rgb(62, 62, 67);
+    border-radius: 60%;
+    top: -55px; 
     right: 0; 
     left: 0; 
     z-index: 900;
     position: relative;
 }
 .logo-login{
-    width: 65%;
+    width: 80%;
     height: auto;
     margin: auto;
     position: absolute;
-    top: 50%;
+    top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
 }
-
 .mx-auto .push{
     outline: none;
     color:rgb(72, 71, 66);
@@ -252,14 +260,12 @@ label{
     0 2px 2px rgba(0,0,0,0.15), 
     0 4px 4px rgba(0,0,0,0.15), 
     0 8px 8px rgba(0,0,0,0.15);
-
 }
 button:focus{
     border:none;
     outline:none;
 }
 /* --------------Concept-------------- */
-
 .concept{
     margin:90px auto;
     width:70%;
@@ -267,15 +273,14 @@ button:focus{
 .concept h2{
     padding-bottom: 20px;
 }
-
 .concept p{
     font-family: 'Playfair Display', serif;
     font-size: 18px;
     font-weight: 100;
     line-height: 2.5;
-    
-}
+    color:rgb(72, 71, 66, 0.7);
 
+}
 /* --------------Eat together(Reservation)-------------- */
 .reservation{
     margin:90px auto;
@@ -296,11 +301,9 @@ button:focus{
     background-size: cover;
     background-position: center;
   }
-  
-  .bg01 {
+.bg01 {
     background-image: url("../images/Pictures-bigsize/mehrshad-rajabi-BRVpzGwNzzI-unsplash.jpg");
   }
-
 /* -------------Gallery------------ */
 .gallery::before{
     content: '';
@@ -312,19 +315,22 @@ button:focus{
     top: 0;
     bottom: 0;
 }
-
-
+.gallery-1{
+    display: block;
+    object-fit: cover; 
+}
+.gallery-4{
+    width: auto;
+    object-fit: cover; 
+}
 /* --------------Hour-------------- */
-
 .row h2{
     font-size:1.5rem;
     padding-bottom: 10px;
 }
-
 .row p{
     margin-top:10px;
 }
-
 .hour-container h2{
     border-bottom: 1px solid rgb(53, 48, 45);
 }
@@ -333,36 +339,42 @@ button:focus{
     font-size: 18px;
     font-weight: 100;
 }
-
 /* --------------Footer-------------- */
-
 .fab{
     font-size:25px;
     margin:8px;
     }
-
 .footer-logo img{
-    width: 120px;
+    width: 90px;
     height: auto;
     margin-bottom:8px;
 }
-
 @media(max-width:992px){
-
     /* -----Concept------ */
     .concept-text p{
        font-size:15px;
     }
-
-        .hour-container h2{
-            border-bottom: 1px solid rgb(53, 48, 45);
-            padding-top: 50px;
-        }
+    .hour-container h2{
+        border-bottom: 1px solid rgb(53, 48, 45);
+        padding-top: 50px;
+    }
+    .gallery-4 {
+        display: none;
+    }
+    }
+@media(max-width:768px){
+    /* -----Slideshow----- */
+    .carousel-inner{
+        width: auto;
+        height: 900px;
+        overflow: hidden;
     }
 
-@media(max-width:768px){
-
-
+    .carousel-item img{
+        height: 900px;
+        object-fit: cover; 
+        z-index: -1000;
+    }
     /* -----Concept------ */
     .concept{
         margin:80px auto;
@@ -379,5 +391,4 @@ button:focus{
     .hour-container .col-md-3{
         padding:30px;
     }
-
 }
