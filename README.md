@@ -8,7 +8,7 @@ We created a website for a Persian restaurant. </br>
 *Names, products, addresses, etc. are all fictitious.
 
 ## Logo
-![logo-readme](https://user-images.githubusercontent.com/64046048/93527379-a22cbd00-f8ed-11ea-9b82-13ea35ae8d94.png)
+![logo-readme](https://user-images.githubusercontent.com/64046048/93527599-f46dde00-f8ed-11ea-8d05-f8419a9daf35.jpg)
 
 This logo is based on a Persian cat.
 
