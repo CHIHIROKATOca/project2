@@ -5,7 +5,6 @@ html{
 *, 
 *:before , *:after {
     box-sizing: inherit;
-
 }
 body {
     font-family: 'Roboto', sans-serif;
@@ -54,7 +53,6 @@ img {
 .hidden{
     display: none;
 }
-
 .loading-img{
     width: 200px;
     position: absolute;
@@ -81,16 +79,13 @@ nav{
     color:white;
     font-weight: 400;
   }
-
 nav a{
     transition: 1s;
     color:white;
   }
-
 nav a:hover{
     color:rgb(255, 255, 255, 1);
   }
-
 .navbar .logo{
     width: 100px;
     height: auto;
@@ -100,7 +95,6 @@ nav a:hover{
 .collapse .navbar-collapse{
     background-color:green;
 }
-
 /* --------------Slide show-------------- */
 .carousel-inner{
     width: 100%;
@@ -139,7 +133,6 @@ nav a:hover{
     margin: 0 auto;
     
 }
-
 /* --------------scroll animation-------------- */
 .scroll-wrap{
     position: absolute;
@@ -148,7 +141,6 @@ nav a:hover{
     transform: translateY(-50%) translateX(-50%);
     margin: auto;
 }
-
 .scroll{
     color: white;
     text-decoration: none;
@@ -159,12 +151,10 @@ nav a:hover{
     width: 50px;
     margin:0 auto;
 }
-
 .arrowWrap {
   margin:0 auto;
   text-align: center;
 }
-
 .arrowWrap h1{
     text-align: center;
     font-size:13px;
@@ -200,7 +190,6 @@ nav a:hover{
   margin: auto;
   box-sizing: border-box;
   }
-
 @keyframes arrow {
   0% {
     opacity: 1;
@@ -219,15 +208,12 @@ nav a:hover{
     background-color: rgb(228, 228, 228);
     border: none;
 }
-
 .form-control::placeholder{
     color: #c4c4c4;
   }
-
 form{
     padding:40px;
 }
-
 label{
     margin:0;
     vertical-align: middle;
@@ -280,7 +266,6 @@ button:focus{
     outline:none;
 }
 /* --------------Concept-------------- */
-
 .concept{
     margin:90px auto;
     width:70%;
@@ -288,7 +273,6 @@ button:focus{
 .concept h2{
     padding-bottom: 20px;
 }
-
 .concept p{
     font-family: 'Playfair Display', serif;
     font-size: 18px;
@@ -297,7 +281,6 @@ button:focus{
     color:rgb(72, 71, 66, 0.7);
 
 }
-
 /* --------------Eat together(Reservation)-------------- */
 .reservation{
     margin:90px auto;
@@ -318,11 +301,9 @@ button:focus{
     background-size: cover;
     background-position: center;
   }
-  
-  .bg01 {
+.bg01 {
     background-image: url("../images/Pictures-bigsize/mehrshad-rajabi-BRVpzGwNzzI-unsplash.jpg");
   }
-
 /* -------------Gallery------------ */
 .gallery::before{
     content: '';
@@ -343,16 +324,13 @@ button:focus{
     object-fit: cover; 
 }
 /* --------------Hour-------------- */
-
 .row h2{
     font-size:1.5rem;
     padding-bottom: 10px;
 }
-
 .row p{
     margin-top:10px;
 }
-
 .hour-container h2{
     border-bottom: 1px solid rgb(53, 48, 45);
 }
@@ -361,44 +339,31 @@ button:focus{
     font-size: 18px;
     font-weight: 100;
 }
-
 /* --------------Footer-------------- */
-
 .fab{
     font-size:25px;
     margin:8px;
     }
-
 .footer-logo img{
     width: 90px;
     height: auto;
     margin-bottom:8px;
 }
-
 @media(max-width:992px){
-    /* -----Slideshow------ */
-    
-
     /* -----Concept------ */
     .concept-text p{
        font-size:15px;
     }
-
-        .hour-container h2{
-            border-bottom: 1px solid rgb(53, 48, 45);
-            padding-top: 50px;
-        }
-        .gallery-4 {
-            display: none;
-        }
+    .hour-container h2{
+        border-bottom: 1px solid rgb(53, 48, 45);
+        padding-top: 50px;
     }
-
-    
-
+    .gallery-4 {
+        display: none;
+    }
+    }
 @media(max-width:768px){
-
     /* -----Slideshow----- */
-
     .carousel-inner{
         width: auto;
         height: 900px;
@@ -410,8 +375,6 @@ button:focus{
         object-fit: cover; 
         z-index: -1000;
     }
-    
-    
     /* -----Concept------ */
     .concept{
         margin:80px auto;
@@ -428,5 +391,4 @@ button:focus{
     .hour-container .col-md-3{
         padding:30px;
     }
-
 }
