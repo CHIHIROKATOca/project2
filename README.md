@@ -1,4 +1,4 @@
-# project2 Chak-Persian restaurant web site-
+# [project2] Chak-Persian restaurant web site-
 This is a responsible web page using html,css,js.
 
 ## Description
