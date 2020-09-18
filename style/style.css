@@ -914,9 +914,8 @@ ul.item{
     0 2px 2px rgba(0,0,0,0.15), 
     0 4px 4px rgba(0,0,0,0.15), 
     0 8px 8px rgba(0,0,0,0.15);
-    border: 1px solid #EBDFDF;
-    outline: 1px solid rgb(255, 255, 255); /* 線幅、線のスタイル、カラー */
-    outline-offset: -5px; /* 対象の要素からの距離、マイナス(内側)にも対応 */
+    outline: 2px solid rgb(255, 255, 255); /* 線幅、線のスタイル、カラー */
+    outline-offset: -10px; /* 対象の要素からの距離、マイナス(内側)にも対応 */
 }
 
 /* ==========================KIMI========================== */
