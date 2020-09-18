@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -13,18 +12,16 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
     <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
-
      <!-- Calendar -->
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"/>
      <!-- Calendar -->
-
     <link rel="stylesheet" href="style/style.css">
     <script src="js/scroll.js" defer></script>
     <script src="js/menu.js" defer></script>
 </head>
 <body id="reservation">
     <div class="wrapper">
-    <header class="container-fluid p-0 m-0 fixed-top">
+    <header>
     <!-- header -->
     <nav class="navbar navbar-expand-lg px-4 py-3 m-0 navbar-dark" id="nav">
       <a class="navbar-brand text-uppercase h1" href="index.html">
@@ -59,7 +56,7 @@
                   </li>
              </ul>
               <!-- Button trigger modal -->
-              <button type="button" class="btn btn-outline-light  ml-3 rounded-0 btn-login" data-toggle="modal" data-target="#exampleModal">Log in</button>
+              <button type="button" class="btn btn-outline-light ml-3 rounded-0 btn-login" data-toggle="modal" data-target="#exampleModal">Log in</button>
               </div>
             </nav>
               <!-- Modal -->
@@ -211,5 +208,22 @@
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+<!-- Calendar -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
+<script>
+    // Data Picker Initialization
+    $(document).ready(function(){
+  var date_input=$('input[name="date"]'); //our date input has the name "date"
+  var container=$('.bootstrap-iso form').length>0 ? $('.bootstrap-iso form').parent() : "body";
+  var options={
+    format: 'mm/dd/yyyy',
+    container: container,
+    todayHighlight: true,
+    autoclose: true,
+  };
+  date_input.datepicker(options);
+})
+</script>
+ <!-- Calendar -->
 </body>
 </html>
