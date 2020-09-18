@@ -102,9 +102,6 @@ nav ul li.current {
     margin: 0;
     padding: 0;
 }
-.collapse .navbar-collapse{
-    background-color:green;
-}
 button.menu {
     display: none;
     width: 40px;
@@ -121,6 +118,8 @@ button.menu .bar {
     width: 100%;
     position: relative;
     border-radius: 10px;
+    margin: 0;
+    padding: 0;
 }
 button.menu .bar:before {
     content: "";
@@ -132,6 +131,8 @@ button.menu .bar:before {
     left: 0;
     border-radius: 10px;
     transition: all 0.3s ease-in-out;
+    margin: 0;
+    padding: 0;
 }
 button.menu .bar:after {
     content: "";
@@ -143,6 +144,8 @@ button.menu .bar:after {
     left: 0;
     border-radius: 10px;
     transition: all 0.3s ease-in-out;
+    margin: 0;
+    padding: 0;
 }
 button.menu:focus,
 .button-content:focus {
@@ -154,10 +157,17 @@ button.menu:focus,
 .show button.menu .bar:before {
     transform: rotate(45deg);
     top: 0;
+    margin: 0;
+    padding: 0;
 }
 .show button.menu .bar:after {
     transform: rotate(-45deg);
     top: 0;
+    margin: 0;
+    padding: 0;
+}
+.show nav{
+    height: 400px;
 }
 .btn-login:hover {
     background-color: rgb(255, 255, 255, 0.7);
@@ -167,6 +177,7 @@ button.menu:focus,
         margin-top: 30px;
     }
 }
+
 /* --------------Slide show-------------- */
 .carousel-inner{
     width: 100%;
@@ -476,6 +487,87 @@ button:focus{
     margin:0 0 0 auto;
 }
 @media(max-width:992px){
+    /* -------nav------ */
+    button.menu{
+        display: block;
+        width: 30px;
+        height: auto;
+        border:none;
+        background-color: transparent;
+        padding:0;
+        margin: 0;
+    }
+    
+    button.menu .bar{
+        display: block;
+        
+        background-color: white;
+        width: 100%;
+        position: relative;
+        top:10px;
+        transition: all 0.3s ease-in-out;
+        margin: 0;
+        padding: 0;
+    }
+    button.menu .bar::before{
+        content: "";
+        width: 100%;
+        height: 3px;
+        background-color: white;
+        position: absolute;
+        top:10px;
+        left: 0;
+        transition: all 0.3s ease-in-out;
+        margin: 0;
+        padding: 0;
+    }
+    
+    button.menu .bar::after{
+        content: "";
+        width: 100%;
+        height: 3px;
+        background-color: white;
+        position: absolute;
+        top:-10px;
+        left: 0;
+        transition: all 0.3s ease-in-out;
+        margin: 0;
+        padding: 0;
+    }
+    
+    button.menu:focus,
+    .button-content:focus{
+        outline: none;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .show button.menu .bar{
+        background-color: transparent;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .show button.menu .bar::before{
+        top:0;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .show button.menu .bar::after{
+        top:0;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .button-content{
+        width: 30px;
+        height: 30px;
+        margin: 0;
+        padding: 0;
+    }
+   
+
     /* -----Concept------ */
     .concept-text p{
        font-size:15px;
