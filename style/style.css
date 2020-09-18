@@ -73,6 +73,11 @@ img {
     left: 50%;
     transform: translate(-50%, -50%);
 }
+/* --------------Header-------------- */
+#contact header {
+    background-color: transparent;
+    background-size: cover;
+}
 /* --------------Navigation-------------- */
 nav{
     transition: 1s;
