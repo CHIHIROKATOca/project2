@@ -49,6 +49,7 @@ img {
 .container{
     margin:0 auto;
 }
+/* ==========================CHIHIRO========================== */
 /* -----loading----- */
 .hidden{
     display: none;
@@ -98,7 +99,7 @@ nav a:hover{
 /* --------------Slide show-------------- */
 .carousel-inner{
     width: 100%;
-    max-height: 700px;
+    max-height: 650px;
     padding:0;
     margin:0 auto;
 }
@@ -115,7 +116,7 @@ nav a:hover{
 .carousel .slide{
     position: relative;
     width: 100%;
-    max-height: 700px;
+    max-height: 650px;
     padding:0;
     margin:0 auto;
     object-fit: cover;
@@ -310,6 +311,8 @@ button:focus{
     color: #fff;
     border: 2px solid #eee;
     border-radius: 35px;
+    font-family: "roboto";
+    font-weight: 400;
 } 
 .reservation .material-icons{
     font-size: 15px;
@@ -375,6 +378,29 @@ button:focus{
     height: auto;
     margin-bottom:8px;
 }
+.footer-logo{
+    display: flex;
+}
+.footer-wrapper{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    padding:50px;
+    margin-top: 50px;
+}
+.footer-wrapper2{
+    display: flex;
+    align-items:flex-end;
+} 
+.footer-sns{
+    text-align:right;
+}
+.footer-logo{
+    margin-top:30px;
+}
+.footer-logo img{
+    margin:0 0 0 auto;
+}
 @media(max-width:992px){
     /* -----Concept------ */
     .concept-text p{
@@ -386,6 +412,31 @@ button:focus{
     }
     .gallery-4 {
         display: none;
+    }
+    /* -----Footer------ */
+    .footer-wrapper{
+        display: block;
+        text-align: center;
+    }
+    .footer-wrapper2{
+        display: block;
+        align-items:center;
+        margin: 0 auto;
+    } 
+    .footer-sns{
+        display: block;
+        align-items:center;
+        margin: 10px auto;
+    }
+
+    .footer-sns{
+        text-align:center;
+    }
+    .footer-logo{
+        margin-top:30px;
+    }
+    .footer-logo img{
+        margin: 10px auto;
     }
     }
 @media(max-width:768px){
@@ -418,3 +469,6 @@ button:focus{
         padding:30px;
     }
 }
+/* ==========================KIMI========================== */
+/* ==========================Afshin========================== */
+
