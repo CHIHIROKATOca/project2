@@ -912,8 +912,8 @@ ul.item{
     color: #666;
 }
 .coupon{
-    width: 250px;
-    height: 100px;
+    width: 50%;
+    height: auto;
     padding: 20px;
     color: rgb(255, 255, 255);
     text-align: center;
@@ -930,6 +930,36 @@ ul.item{
     0 8px 8px rgba(0,0,0,0.15);
     outline: 2px solid rgb(255, 255, 255); /* 線幅、線のスタイル、カラー */
     outline-offset: -10px; /* 対象の要素からの距離、マイナス(内側)にも対応 */
+    margin-right: 20px;
+    border-radius: 10px;
+
+}
+
+.coupon2{
+    width: 50%;
+    height: auto;
+    padding: 20px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-family: 'Roboto';
+    font-weight: 400;
+    background: #46b15c;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #34e97c, #a4dd32);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #3d84aa, #32aadd); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    margin-top: 30px;
+    opacity: 0.5;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.15), 
+    0 2px 2px rgba(0,0,0,0.15), 
+    0 4px 4px rgba(0,0,0,0.15), 
+    0 8px 8px rgba(0,0,0,0.15);
+    outline: 2px solid rgb(255, 255, 255); /* 線幅、線のスタイル、カラー */
+    outline-offset: -10px; /* 対象の要素からの距離、マイナス(内側)にも対応 */
+    border-radius: 10px;
+}
+
+.form-group-coupon{
+    display: flex;
+    
 }
 
 /* ==========================KIMI========================== */
