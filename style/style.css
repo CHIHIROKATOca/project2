@@ -293,6 +293,7 @@ button:focus{
 .reservation p{
     padding-bottom: 20px;
 }
+
 .fixed-bg {
     min-height: 10vh;
     background-attachment: fixed;
@@ -302,6 +303,17 @@ button:focus{
 .bg01 {
     background-image: url("../images/Pictures-bigsize/mehrshad-rajabi-BRVpzGwNzzI-unsplash.jpg");
   }
+.btn-pink-moon {
+    background: #ec008c;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #aa3daa, #aa32dd);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #aa3daa, #aa32dd); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #fff;
+    border: 2px solid #eee;
+    border-radius: 35px;
+} 
+.reservation .material-icons{
+    font-size: 15px;
+}
 /* -------------Gallery------------ */
 .gallery::before{
     content: '';
