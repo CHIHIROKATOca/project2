@@ -485,6 +485,7 @@ button:focus{
 .footer-logo img{
     margin:0 0 0 auto;
 }
+
 @media(max-width:992px){
     /* -------nav------ */
     button.menu {
@@ -616,6 +617,19 @@ button.menu:focus,
 @media(max-width: 768px){
     .btn-login {
         margin-top: 30px;
+    }
+}
+@media(max-width:550px){
+    .account-list{
+        text-align: center;
+        padding-bottom: 20px;
+        border-bottom: 1px solid rgb(189, 189, 189);
+    }
+    img.account-photo img{
+        margin:0 auto;
+    }
+    #profileImg{
+        margin:0 auto;
     }
 }
     /* -----Slideshow----- */
