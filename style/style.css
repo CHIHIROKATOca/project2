@@ -24,7 +24,7 @@ p {
     margin:0 auto;
     padding:0;
 }
-h1,h2,h3,h4{
+h1,h2,h3,h4,h5{
     font-family: 'Playfair Display', serif;
     letter-spacing:0.1em;
     font-feature-settings: "palt";
@@ -477,9 +477,10 @@ button:focus{
     text-align:right;
 }
 .footer-logo{
-    margin-top:30px;
+    align-items: flex-start;
     width: 100%;
-    height: 100%;
+    height: auto;
+    object-fit: cover;
 }
 .footer-logo img{
     margin:0 0 0 auto;
@@ -521,6 +522,7 @@ button:focus{
     }
     .footer-logo{
         margin-top:30px;
+        height: auto;
     }
     .footer-logo img{
         margin: 10px auto;
@@ -645,6 +647,278 @@ button.menu:focus,
         padding:30px;
     }
 }
+
+/* -------------personal account(top page)---------------- */
+#account header {
+    background: url(../images/Pictures-bigsize/kenny-luo-7IiPopynx18-unsplash.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+#account header {
+    background: url(../images/Pictures-bigsize/kenny-luo-7IiPopynx18-unsplash.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+#account main {
+    font-family: 'Roboto', sans-serif;
+    width: 90%;
+    margin: 0 auto;
+    flex: 1;
+}
+#account h2 {
+    text-align: center;
+    margin: 40px 0;
+}
+#account .account-flex {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+#account .account-flex .account-address {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 20px;
+}
+#account .account-flex .account-address,
+#account .account-flex .account-form {
+    width: 90%;
+    margin: 0 auto;
+}
+#account .account-flex .account-form {
+    padding: 0;
+    margin-top: 30px;
+}
+#caccount .account-flex .account-address h4 {
+    margin-bottom: 30px;
+}
+#account .account-flex .account-address dl {
+    color: #666;
+    font-weight: 200;
+}
+#account .account-flex .account-address dl dt {
+    font-weight: normal;
+}
+#account .account-flex .account-address dl dd {
+    font-size: 13px;
+}
+#account .account-flex .account-address h4 span {
+    font-size: 14px;
+    display: inline-block;
+    margin-left: 5px;
+}
+#account .account-flex .account-form .form-title {
+    font-size: 14px;
+    margin-bottom: 5px;
+    display: block;
+}
+.account-form input[type='checkbox']:after {
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    top: -4px;
+    left: -3px;
+    position: relative;
+    background-color: #d1d3d1;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 4px solid white;
+}
+
+.account-form input[type='checkbox']:checked:after {
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    top: -4px;
+    left: -3px;
+    position: relative;
+    background-color: #b83042;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border:4px solid white;
+}
+
+.account-form input::placeholder {
+    color: #afafaf;
+    font-size: 13px;
+    font-weight: 200;
+}
+
+.account-form input:focus,
+.account-form textarea:focus {
+    box-shadow: none;
+    border: 1px solid black;
+}
+.account-form button.btn {
+    background-color: #b83042;
+    color: white;
+    letter-spacing: 1px;
+    display: block;
+    margin: 0 auto;
+}
+.account-form button.btn:hover {
+    background-color: rgb(184, 48, 66, 0.8);
+    transition: all 0.3s ease-in-out;
+}
+.account-form button.btn:focus {
+    box-shadow: none;
+}
+a.form-Edit{
+    font-size: 8px;
+    padding: 0;
+    margin-left: 5px;
+    color: #666;
+
+}
+.account-photo img{
+        border-radius: 50%;  
+        width:  90px;      
+        height: 90px;
+        margin-left: 0;
+        margin-bottom: 10px;
+}
+.account-edit{
+    float: left;
+}
+.account-form .form-group{
+    margin-bottom: 30px;
+}
+.account-list a{
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 400;
+}
+/* -------------personal account(order history)---------------- */
+.order-group{
+    display: flex;
+    height: 30px;
+    vertical-align: middle;
+    margin-bottom: 20px;
+}
+.order-item{
+    padding-right: 10px;
+    font-size: 15px;
+}
+
+.order-item .btn{
+    font-size: 8px;
+}
+
+/* ----------order detaile modal ----------- */
+
+#ModalDetailes .modal-header{
+    border: none;
+}
+#ModalDetailes .modal .fade{
+    position: relative;
+}
+#ModalDetailes .modal-dialog{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30%;
+    min-width: 300px;
+    margin: 0;
+}
+.order-list {
+    display: flex;
+    justify-content: space-between;
+    padding:0;
+    margin:0;
+    font-size: 15px;
+}
+ul.price{
+    text-align: right;
+    padding:0;
+    margin:0;
+}
+.order-list .price li{
+    list-style: none;
+    padding:0;
+    margin:0;
+    margin-bottom: 10px;
+
+}
+ul.item{
+    padding:0;
+    margin:0; 
+}
+.order-list .item li{
+    list-style: none;
+    padding:0;
+    margin:0 auto;
+    margin-bottom: 10px;
+}
+.order-modal-body h5{
+    font-size: 15px;
+    margin:0 0 30px 0;
+}
+.order-list-total {
+    display: flex;
+    justify-content: space-between;
+    padding:0;
+    margin:0;
+    font-size: 14px;
+}
+.order-list-total ul{
+    list-style: none;
+    padding:0;
+    margin:0;
+    margin-bottom: 10px;
+    font-size: 13px;
+}
+.modaldetailes-label{
+    text-align: center;
+    padding: 20px;
+}
+@media(min-width: 550px) {
+    #account .account-flex {
+        flex-direction: row;
+    }
+    #account .account-flex .account-list {
+        width: 25%;
+        border-right: 1px solid #ddd;
+        border-bottom: none;
+        padding-right: 10px;
+    }
+    #account .account-flex .account-form {
+        width: 65%;
+        margin-top: 0;
+    }
+    .account-form button.btn {
+        margin: 0 0 0 auto;
+    }
+}
+#account dl{
+    line-height: 3rem;
+}
+#account dl dt a{
+    color:rgb(72, 71, 66);
+}
+#account dl dt a:active{
+    color: #666;
+}
+
+.coupon{
+    width: 200px;
+    height: 80px;
+    padding: 10px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    background: #9a5c81;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #aa3daa, #aa32dd);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #aa3daa, #aa32dd); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    margin-top: 30px;
+    opacity: 0.5;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.15), 
+    0 2px 2px rgba(0,0,0,0.15), 
+    0 4px 4px rgba(0,0,0,0.15), 
+    0 8px 8px rgba(0,0,0,0.15);
+    border: 1px solid #EBDFDF;
+    outline: 1px solid rgb(255, 255, 255); /* 線幅、線のスタイル、カラー */
+    outline-offset: -5px; /* 対象の要素からの距離、マイナス(内側)にも対応 */
+}
+
 /* ==========================KIMI========================== */
 /* ----------------- Contact ------------------- */
 .wrapper {

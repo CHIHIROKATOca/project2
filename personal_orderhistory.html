@@ -3,17 +3,298 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chack</title>
+    <title>Chack | Contact</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="icon" 
+      type="image/png" 
+      href="images/logo/favicon.ico">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="style/style.css">
+    <script src="js/scroll.js" defer></script>
+    <script src="js/menu.js" defer></script>
 </head>
-<body>
-   
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-
+<body id="account">
+    <div class="wrapper">
+    <header>
+    <!-- header -->
+    <nav class="navbar navbar-expand-lg px-4 py-3 m-0 navbar-dark" id="nav">
+      <a class="navbar-brand text-uppercase h1" href="index.html">
+          <img src="images/logo/logo-nav.png" alt="logo-chak" class="logo">
+        </a>
+        <button class="menu" id="menu" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="button-content" tabindex="-1">
+                <span class="sr-only">Menu</span>
+                <span class="bar"></span>
+            </span>
+        </button>
+       <!-- nav link -->
+           <div class="collapse navbar-collapse" id="navbarSupportedContent">
+             <ul class="navbar-nav ml-auto">
+               <li class="nav-item px-3">
+                 <a class="nav-link" href="index.html" id="nav-text">Home</a>
+               </li>
+               <li class="nav-item px-3">
+                 <a class="nav-link" href="menu.html">Menu</a>
+               </li>
+               <li class="nav-item px-3">
+                <a href="onlineorder.html" class="nav-link" id="nav-text">Order</a>
+               </li>
+               <li class="nav-item px-3">
+                 <a class="nav-link" href="reservation.html">Reservation</a>
+               </li>
+               <li class="nav-item px-3">
+                  <a class="nav-link" href="location.html" id="nav-text">Location</a>
+                </li>
+                <li class="nav-item px-3">
+                <a class="nav-link" href="contact.html" id="nav-text">Contact</a>
+                </li>
+             </ul>
+              <!-- Button trigger modal -->
+              <button type="button" class="btn btn-outline-light  ml-3 rounded-0 btn-login" data-toggle="modal" data-target="#exampleModal">Log in</button>
+              </div>
+            </nav>
+             <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog position-relative" role="document">  
+                <div class="circle position-absolute mx-auto"><img src="images/logo/logo-login-02.png" alt="logo" class="logo-login"></div>
+                <div class="modal-content ">
+                <div class="modal-header position-relative">
+                    <button type="button" class="close m-0 p-0 text-right position-absolute" data-dismiss="modal" aria-label="Close" style="width: 100%; right: 20px;">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <!-- Modal text -->
+                <form>
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">
+                      <span class="material-icons">
+                        local_post_office</span>
+                      User Name or Email address</label>
+                    <input type="email" class="form-control mt-1" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter  User name or Email">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputPassword1">
+                      <span class="material-icons">
+                        vpn_key
+                        </span>
+                      Password</label>
+                    <input type="password" class="form-control mt-1" id="exampleInputPassword1" placeholder="Password">
+                  </div>
+                  <button type="submit" class="btn btn-secondary w-100 mt-3"><a href="personalaccount.html" class="text-white">Log in</a></button>
+                </form>
+                  <div class="modal-footer text-center mx-auto">
+                  <p>Looking to <a href="#"> create an account ?</a></p>
+                  </div>
+            </div>
+        </div>
+      </div>
+    </header>
+    <!-- main -->
+    <main>
+        <h2>Your Account</h2>
+        <div class="account-flex">
+            <div class="account-list">
+                <div class="account-photo">
+                    <img src="images/logo/profile.png" alt="">
+                </div>
+                <dl>
+                    <dt><a href="personalaccount.html">My Plofile</a></dt>
+                    <dt><a href="#" class="account-current">Order History</a></dt>
+                    <dt><a href="personal-reservation.html">Reservation</a></dt>
+                    <dt><a href="personal-coupon.html">Coupon</a></dt>
+                </dl>
+                <button type="submit" class="btn btn-secondary btn-sm rounded" style="font-size: 10px; background-color: rgb(181, 181, 181); border: none;">Log out</button>
+            </div>
+            <form class="account-form">
+                <div class="form-group">
+                <p>Order History</p>
+                </div>
+                <div class="order-group">
+                  <div class="order-item date" style="font-weight: 400;">
+                    <p>2020/09/02</p>
+                  </div>
+                  <div class="order-item item">
+                    <p>Gheymeh / kabab / ...</p>
+                  </div>
+                  <div class="order-item price">
+                    <p>$47.70</p>
+                  </div>
+                  <div class="order-item detaile-btn">
+                    <button type="button" class="btn btn-sm bg-secondary p-1 detaile-btn"  data-toggle="modal" data-target="#ModalDetailes">See Detaile</button>
+                  </div>
+                </div>
+                <div class="order-group">
+                  <div class="order-item date" style="font-weight: 400;">
+                    <p>2020/08/10</p>
+                  </div>
+                  <div class="order-item item">
+                    <p>Gheymeh / kabab / ...</p>
+                  </div>
+                  <div class="order-item price">
+                    <p>$94.00</p>
+                  </div>
+                  <div class="order-item detaile-btn">
+                    <button type="button" class="btn btn-sm bg-secondary p-1 detaile-btn"  data-toggle="modal" data-target="#ModalDetailes">See Detaile</button>
+                  </div>
+                </div>
+                <div class="order-group">
+                  <div class="order-item date" style="font-weight: 400;">
+                    <p>2020/06/20</p>
+                  </div>
+                  <div class="order-item item">
+                    <p>Gheymeh / kabab / ...</p>
+                  </div>
+                  <div class="order-item price">
+                    <p>$27.50</p>
+                  </div>
+                  <div class="order-item detaile-btn">
+                    <button type="button" class="btn btn-sm bg-secondary p-1 detaile-btn"  data-toggle="modal" data-target="#ModalDetailes">See Detaile</button>
+                  </div>
+                </div>
+                <div class="order-group">
+                  <div class="order-item date" style="font-weight: 400;">
+                    <p>2020/04/16</p>
+                  </div>
+                  <div class="order-item item">
+                    <p>Gheymeh / kabab / ...</p>
+                  </div>
+                  <div class="order-item price">
+                    <p>$47.50</p>
+                  </div>
+                  <div class="order-item detaile-btn">
+                    <button type="button" class="btn btn-sm bg-secondary p-1 detaile-btn"  data-toggle="modal" data-target="#ModalDetailes">See Detaile</button>
+                  </div>
+                </div>
+                <div class="order-group">
+                  <div class="order-item date" style="font-weight: 400;">
+                    <p>2020/03/01</p>
+                  </div>
+                  <div class="order-item item">
+                    <p>Gheymeh / kabab / ...</p>
+                  </div>
+                  <div class="order-item price">
+                    <p>$80.00</p>
+                  </div>
+                  <div class="order-item detaile-btn">
+                    <button type="button" class="btn btn-sm bg-secondary p-1 detaile-btn"  data-toggle="modal" data-target="#ModalDetailes">See Detaile</button>
+                  </div>
+                </div>
+                </div>            
+            </form>
+          </div>
+        </main>
+            <!-- Modal -->
+            <div class="modal fade" id="ModalDetailes" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modaldetailes-label">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+                <h5 class="modaldetailes-label" id="modaldetailes-label">Your Order</h5>
+            </div>
+          <div class="order-modal-body">
+            <div class="modal-body">
+              <h5>2020/09/10</h5>
+              <div class="order-list">
+              <ul class="item">
+                <li>Gheymeh</li>
+                <li>Kabab</li>
+                <li>Chay</li>
+                <li>shishlik</li>
+              </ul>
+              <ul class="price">
+                <li>$15.00</li>
+                <li>$10.00</li>
+                <li>$4.00</li>
+                <li>$14.00</li>
+              </ul>
+            </div>
+              <hr>
+              <div class="order-list-total">
+                <ul class="item">
+                  <li>Sub total</li>
+                  <li>Tax</li>
+                  <li>Tips</li>
+                  <li>Collect Points</li>
+                </ul>
+                <ul class="price">
+                  <li>$43.00</li>
+                  <li>$5.00</li>
+                  <li>$4.00</li>
+                  <li>230 Points</li>
+                </ul>
+              </div>
+              <hr>
+              <div class="order-list-total">
+                <ul class="item">
+                  <li>Total</li>
+                </ul>
+                <ul class="price">
+                  <li>$47.70</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+          <button type="button" class="btn-sm btn-danger" data-dismiss="modal" style="margin: 0 auto;"> Order Again</button>
+      </div>
+    </div>
+  </div>
+</div>
+   <!-- footer -->
+   <footer class="footer-wrapper container-fluid" style="background-color: rgb(53, 48, 45);">
+    <div class="footer-wrapper1">
+      <p style="font-size: 14px">
+        <b style="font-size: 13px; font-weight: 700;" >Location:</b></br>
+          AA street, Vancouver, BC CANADA 1A2 B3C</br>
+          <b style="font-size: 13px; font-weight: 700;">Open Hours:</b></br>
+          11:30 PM to 9 PM Tue-Sun Monday Closed</br>
+          <b style="font-size: 13px; font-weight: 700;">Contact:</b></br>
+          info@chacpersian.com</br>
+          604 000 0000
+      </p>
+    </div>
+    <div class="footer-wrapper2">
+      <div class="footer-text2">
+        <div class="footer-logo">
+          <img src="images/logo/logo-nav.png" alt="">
+        </div>
+        <div class="footer-sns">
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-facebook-square"></i>
+        </div>
+        <div class="footer-text2">
+          <p  style="font-size: 13px;">copy right &copy; 2020 Chak persian.</p>
+          <img src="" alt="">
+        </div>
+      </div>
+    </div>
+</footer>
+</div>
+<script>
+  $(function(){
+  mw('#modal','#modal_content','#btn_modal','.btn_close');
+  mw('#ModalDetailes','#ModalDetailes_content','#btn_menu','.btn_close');
+});
+ 
+function mw(modal, modalContent, btnOpen, btnClose){
+  $(btnOpen).on('click', function() {
+    $(modal).fadeIn();
+  });  
+  $(modal).on('click', function(event) {
+    if(!($(event.target).closest($(modalContent)).length)||($(event.target).closest($(btnClose)).length)){
+      $(modal).fadeOut();
+    }
+  });
+}
+</script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 </body>
 </html>
