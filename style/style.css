@@ -911,14 +911,14 @@ ul.item{
 #account dl dt a:active{
     color: #666;
 }
-
 .coupon{
-    width: 200px;
-    height: 80px;
-    padding: 10px;
+    width: 250px;
+    height: 100px;
+    padding: 20px;
     color: rgb(255, 255, 255);
     text-align: center;
-    font-family: 'Playfair Display', serif;
+    font-family: 'Roboto';
+    font-weight: 400;
     background: #9a5c81;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #aa3daa, #aa32dd);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #aa3daa, #aa32dd); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
