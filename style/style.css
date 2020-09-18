@@ -1,3 +1,4 @@
+/* ==========================CHIHIRO========================== */
 /* ---------basic setting--------- */
 html{
     box-sizing: border-box;
@@ -49,7 +50,6 @@ img {
 .container{
     margin:0 auto;
 }
-/* ==========================CHIHIRO========================== */
 /* -----loading----- */
 .hidden{
     display: none;
@@ -473,5 +473,259 @@ button:focus{
     }
 }
 /* ==========================KIMI========================== */
+/* ----------------- Contact ------------------- */
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+#contact header {
+    background: url(../images/Pictures-bigsize/kenny-luo-7IiPopynx18-unsplash.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+main {
+    font-family: 'Roboto', sans-serif;
+    width: 90%;
+    margin: 0 auto;
+    flex: 1;
+}
+#contact h2 {
+    text-align: center;
+    margin: 40px 0;
+}
+#contact .contact-flex {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+#contact .contact-flex .contact-address {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 20px;
+}
+#contact .contact-flex .contact-address,
+#contact .contact-flex .contact-form {
+    width: 90%;
+    margin: 0 auto;
+}
+#contact .contact-flex .contact-form {
+    padding: 0;
+    margin-top: 30px;
+}
+#contact .contact-flex .contact-address h4 {
+    margin-bottom: 30px;
+}
+#contact .contact-flex .contact-address dl {
+    color: #666;
+    font-weight: 200;
+}
+#contact .contact-flex .contact-address dl dt {
+    font-weight: normal;
+}
+#contact .contact-flex .contact-address dl dd {
+    font-size: 13px;
+}
+#contact .contact-flex .contact-address h4 span {
+    font-size: 14px;
+    display: inline-block;
+    margin-left: 5px;
+}
+#contact .contact-flex .contact-form .form-title {
+    font-size: 14px;
+    margin-bottom: 5px;
+    display: block;
+}
+.contact-form input[type='checkbox']:after {
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    top: -4px;
+    left: -3px;
+    position: relative;
+    background-color: #d1d3d1;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 4px solid white;
+}
+
+.contact-form input[type='checkbox']:checked:after {
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    top: -4px;
+    left: -3px;
+    position: relative;
+    background-color: #b83042;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border:4px solid white;
+}
+
+.contact-form input::placeholder {
+    color: #afafaf;
+    font-size: 13px;
+    font-weight: 200;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    box-shadow: none;
+    border: 1px solid black;
+}
+.contact-form button.btn {
+    background-color: #b83042;
+    color: white;
+    letter-spacing: 1px;
+    display: block;
+    margin: 0 auto;
+}
+.contact-form button.btn:hover {
+    background-color: rgb(184, 48, 66, 0.8);
+    transition: all 0.3s ease-in-out;
+}
+.contact-form button.btn:focus {
+    box-shadow: none;
+}
+
+@media(min-width: 550px) {
+    #contact .contact-flex {
+        flex-direction: row;
+    }
+    #contact .contact-flex .contact-address {
+        width: 35%;
+        border-right: 1px solid #ddd;
+        border-bottom: none;
+        padding-right: 30px;
+    }
+    #contact .contact-flex .contact-form {
+        width: 58%;
+        margin-top: 0;
+    }
+    .contact-form button.btn {
+        margin: 0 0 0 auto;
+    }
+}
+
+
+/* ----------------- Location ----------------- */
+#location header {
+    background: url(../images/Pictures-bigsize/chuttersnap-DOBIZ_sqgXM-unsplash.jpg) no-repeat center bottom fixed;
+    background-size: cover;
+}
+#location h2 {
+    text-align: center;
+    margin: 40px 0;
+}
+.location-flex {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.store-location {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
+.store-location:last-child {
+    margin-bottom: 0;
+}
+.store-location h4 {
+    margin-bottom: 30px;
+}
+.store-location h4 span {
+    font-size: 15px;
+    margin-left: 5px;
+}
+.store-location dl {margin-bottom: 20px;}
+.store-location dl dt {
+    font-weight: normal;
+    font-size: 12px;
+    color: #b83042;
+    margin-top: 20px;
+}
+.store-location dl dt:first-child {
+    margin-top: 0;
+}
+.store-location dl dd {
+    font-size: 14px;
+    color: #666;
+}
+.gmap {
+    height: 0;
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+}
+.gmap iframe {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+}
+@media(min-width: 768px) {
+    .location-flex {
+        flex-direction: row;
+    }
+    .store-location {
+        width: 30%;
+        margin-bottom: 0;
+    }
+}
+
+/* ----------------- Reservation ----------------- */
+#reservation header {
+    background: url(../images/Pictures-bigsize/davide-cantelli-jpkfc5_d-DI-unsplash.jpg) no-repeat center bottom fixed;
+    background-size: cover;
+}
+#reservation h2 {
+    text-align: center;
+    margin: 40px 0;
+}
+.c-label-required {
+    font-size: 13px;
+    color: #b83042;
+    margin-left: 5px;
+}
+.reserve-notice {
+    font-size: 13px;
+    color: #666;
+}
+.reserve-notice .c-form-ttl {
+    margin-bottom: 7px;
+    font-weight: 500;
+}
+.reserve-notice dl {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.reserve-notice dl dt {
+    width: 2%;
+}
+.reserve-notice dl dd {
+    width: 97%;
+}
+
+#reservation button.btn-submit {
+    color: #fff;
+    background-color: #b83042;
+    display: block;
+    margin: 0 auto;
+}
+#reservation button.btn-submit:hover {
+    background-color: rgb(184, 48, 66, 0.8);
+    transition: all 0.3s ease-in-out;
+}
+
+@media(max-width: 768px) {
+    #reservation form {
+        padding: 0;
+    }
+} 
 /* ==========================Afshin========================== */
 

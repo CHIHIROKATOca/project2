@@ -3,17 +3,233 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chack</title>
+    <title>Chack | Reservation</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="icon" 
+      type="image/png" 
+      href="images/logo/favicon.ico">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+
+     <!-- Calendar -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"/>
+     <!-- Calendar -->
+
+    <link rel="stylesheet" href="style/style.css">
+    <script src="js/scroll.js" defer></script>
+    <script src="js/menu.js" defer></script>
 </head>
-<body>
-   
+<body id="reservation">
+    <div class="wrapper">
+    <header>
+    <!-- header -->
+      <nav class="navbar navbar-expand-lg p-4 m-0 navbar-dark" id="nav">
+        <a class="navbar-brand text-uppercase h1" href="index.html">
+          <img src="images/logo/logo-nav.png" alt="logo-chak" class="logo">
+        </a>
+        <button class="menu" id="menu" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="button-content" tabindex="-1">
+                <span class="sr-only">Menu</span>
+                <span class="bar"></span>
+            </span>
+        </button>
+       <!-- nav link -->
+           <div class="collapse navbar-collapse" id="navbarSupportedContent">
+             <ul class="navbar-nav ml-auto">
+               <li class="nav-item px-3">
+                 <a class="nav-link" href="index.html" id="nav-text">Home</a>
+               </li>
+               <li class="nav-item px-3">
+                 <a class="nav-link" href="menu.html">Menu</a>
+               </li>
+               <li class="nav-item px-3">
+                <a href="onlineorder.html" class="nav-link" id="nav-text">Order</a>
+               </li>
+               <li class="nav-item px-3 current">
+                 Reservation
+               </li>
+               <li class="nav-item px-3">
+                  <a class="nav-link" href="location.html" id="nav-text">Location</a>
+                </li>
+                <li class="nav-item px-3">
+                    <a class="nav-link" href="contact.html" id="nav-text">Contact</a>
+                  </li>
+             </ul>
+              <!-- Button trigger modal -->
+              <button type="button" class="btn btn-outline-light  ml-3 rounded-0 btn-login" data-toggle="modal" data-target="#exampleModal">Log in</button>
+              </div>
+            </nav>
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog position-relative" role="document">
+              <div class="circle position-absolute mx-auto"><img src="images/logo/logo-login-02.png" alt="logo" class="logo-login"></div>
+              <div class="modal-content ">
+              <div class="modal-header position-relative">
+              <h5 class="modal-title text-center m-0 mx-auto position-absolute"  style="width: 100%; left: 0;" id="exampleModalLabel">Log in</h5>
+                  <button type="button" class="close m-0 p-0 text-right position-absolute" data-dismiss="modal" aria-label="Close" style="width: 100%; right: 20px;">
+                  <span aria-hidden="true">&times;</span>
+                  </button>
+              </div>
+              <!-- Modal text -->
+              <form>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">
+                    <span class="material-icons">
+                      local_post_office</span>
+                    User Name or Email address</label>
+                  <input type="email" class="form-control mt-1" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter User name or Email">
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputPassword1">
+                    <span class="material-icons">
+                      vpn_key
+                      </span>
+                    Password</label>
+                  <input type="password" class="form-control mt-1" id="exampleInputPassword1" placeholder="Password">
+                </div>
+                <button type="submit" class="btn btn-secondary w-100 mt-3">Log in</button>
+              </form>
+            <div class="modal-footer text-center mx-auto">
+            <p>Looking to <a href="#"> create an account ?</a></p>
+          </div>
+        </div>
+      </div>
+  </div>
+    </header>
+
+    <!-- main -->
+    <main>
+        <h2>Reservation</h2>
+        <div class="container">
+            <form method="post" action="./reserve.php">
+                <input type="hidden" value="test" name="reserve_request_date" id="reserve_start_date">
+            <!-- Name -->
+            <div class="form-group">
+                <label class="c-form-ttl">Your Name<span class="c-label-required">* Required</span></label>
+                <input class="form-control" type="text" placeholder="Your Name"
+                        name="reserve_request_tels" id="reserve_request_client_name">
+            </div>
+            <!-- preference date -->
+            <div class="form-group">
+                <label class="c-form-ttl">Date</label><span class="c-label-required">* Required</span>
+                <div id="date-picker-example" class="md-form md-outline input-with-post-icon datepicker">
+                    <input placeholder="Select Date (MM/DD/YYYY)" type="text" id="example" class="form-control">
+                  </div>
+            </div>
+            <!-- preference time -->
+            <div class="form-group">
+                    <label class="c-form-ttl">Time</label><span class="c-label-required">* Required</span>
+                    <select class="form-control" name="reserve_request_time" id="reserve_request_start_time"
+                        aria-invalide="false">
+                        <option value="11:30" label="11:30" selected></option>
+                        <option value="12:00" label="12:00"></option>
+                        <option value="13:00" label="13:00"></option>
+                        <option value="14:00" label="14:00"></option>
+                        <option value="15:00" label="15:00"></option>
+                        <option value="16:00" label="16:00"></option>
+                        <option value="17:00" label="17:00"></option>
+                        <option value="18:00" label="18:00"></option>
+                        <option value="19:00" label="19:00"></option>
+                        <option value="20:00" label="20:00"></option>
+                    </select>
+                </div>
+                <!-- Phone number -->
+                <div class="form-group">
+                    <label class="c-form-ttl">Phone Number</label>
+                    <input class="form-control" type="text" placeholder="604-000-000"
+                            name="reserve_request_tels" id="reserve_request_client_tels_tel">
+                </div>
+                <!-- Numbers of guests -->
+                <div class="form-group">
+                    <label class="c-form-ttl">Number of Guests </label>
+                    <select class="form-control" name="reserve_request_num"
+                        id="reserve_request_number_of_persons" aria-invalid="false">
+                        <option value="1" label="1" selected></option>
+                        <option value="2" label="2"></option>
+                        <option value="3" label="3"></option>
+                        <option value="4" label="4"></option>
+                        <option value="5" label="5"></option>
+                        <option value="More than 6" label="More than 6"></option>
+                    </select>
+                </div>
+                <!-- Message -->
+                <div class="form-group">
+                    <label class="c-form-ttl">Message</label>
+                    <textarea name="reserve_request_comment" id="reserve_request_comment" cols="" rows="3"
+                        class="form-control" placeholder="Please let us know about your allergies, preference and other requests."></textarea>
+                </div>
+                <!-- Notice from restaurant -->
+                <div class="form-group reserve-notice">
+                    <label class="c-form-ttl">Notice</label>
+                    <dl>
+                        <dt>*</dt>
+                        <dd>Your safety is our priority. Due to COVID-19, a maximum of 50% of each property’s usual capacity of guests, at any given time.</dd>
+                        <dt>*</dt>
+                        <dd>Restrict each table to a maximum of six guests, with two meters between guests sitting at different tables or seatings.</dd>
+                    </dl>
+                </div>
+
+                <!-- Reservation -->                
+                <button type="submit" class="btn btn-submit">FIND A TABLE</button>
+
+            </form>
+        </div>
+    </main>
+
+    <!-- footer -->
+    <footer class="container-fluid d-flex justify-content-between text-white p-4 mt-5 " style="background-color: rgb(53, 48, 45);">
+        <div class="col-5 p-0">
+            <p style="font-size: 14px"><b style="font-size: 13px; font-weight: 700;" >Location:</b></br>
+                AA street, Vancouver, BC CANADA 1A2 B3C</br>
+                <b style="font-size: 13px; font-weight: 700;">Open Hours:</b></br>
+                11:30 PM to 9 PM Tue-Sun Monday Closed</br>
+                <b style="font-size: 13px; font-weight: 700;">Contact:</b></br>
+                info@chacpersian.com</br>
+                604 000 0000
+            </p>
+        </div>
+        <div class="col-5 text-right d-flex align-items-end">
+            <div class="row">
+              <div class="col-12 p-0">
+                <img src="images/logo/logo-nav.png" alt="logo" class="mr-0 footer-logo-img">
+              </div>
+              <div class="col-12">
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-facebook-square"></i>
+              </div>
+              <div class="col-12">
+                <p  style="font-size: 13px;">copy right &copy; 2020 Chak persian.</p>
+                <img src="" alt="">
+              </div>
+            </div>
+        </div>
+    </footer>
+</div>
+
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 
+    <!-- Calendar -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
+
+    <script>
+        // Data Picker Initialization
+        $(document).ready(function(){
+      var date_input=$('input[name="date"]'); //our date input has the name "date"
+      var container=$('.bootstrap-iso form').length>0 ? $('.bootstrap-iso form').parent() : "body";
+      var options={
+        format: 'mm/dd/yyyy',
+        container: container,
+        todayHighlight: true,
+        autoclose: true,
+      };
+      date_input.datepicker(options);
+    })
+    </script>
+     <!-- Calendar -->
 </body>
-</html>
+</html> 
