@@ -375,6 +375,7 @@ form{
     width: 100%;
     padding:40px;
 }
+
 #menu .label-wrapper{
     width: 100%;
 }
@@ -775,10 +776,6 @@ button.menu:focus,
 }
 
 /* -------------personal account(top page)---------------- */
-#account header {
-    background: url(../images/Pictures-bigsize/kenny-luo-7IiPopynx18-unsplash.jpg) no-repeat center center fixed;
-    background-size: cover;
-}
 #account header {
     background: url(../images/Pictures-bigsize/kenny-luo-7IiPopynx18-unsplash.jpg) no-repeat center center fixed;
     background-size: cover;
@@ -1407,6 +1404,10 @@ main {
 }
 /* ==========================Afshin========================== */
 /* ------menuStyle------- */
+#menu-order header {
+    background: url(../images/Pictures-bigsize/re-nils-stahl-BCkLxilDvJU-unsplash.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
 input[name=tabs]:checked+label {
     font-weight: bolder;
     border: solid 1px #fff;
