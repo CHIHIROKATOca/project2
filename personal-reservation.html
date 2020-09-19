@@ -49,75 +49,43 @@
            <li class="nav-item px-3">
              <a class="nav-link  p-0" href="contact.html" id="nav-text">Contact</a>
            </li>
-        </ul>
-              <!-- Button trigger modal -->
-              <button type="button" class="btn btn-outline-light  ml-3 rounded-0 btn-login" data-toggle="modal" data-target="#exampleModal">Log in</button>
-              </div>
-            </nav>
-             <!-- Modal -->
-            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-              <div class="modal-dialog position-relative" role="document">  
-                <div class="circle position-absolute mx-auto"><img src="images/logo/logo-login-02.png" alt="logo" class="logo-login"></div>
-                <div class="modal-content ">
-                <div class="modal-header position-relative">
-                    <button type="button" class="close m-0 p-0 text-right position-absolute" data-dismiss="modal" aria-label="Close" style="width: 100%; right: 20px;">
-                    <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <!-- Modal text -->
-                <form>
-                  <div class="form-group">
-                    <label for="exampleInputEmail1">
-                      <span class="material-icons">
-                        local_post_office</span>
-                      User Name or Email address</label>
-                    <input type="email" class="form-control mt-1" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter  User name or Email">
-                  </div>
-                  <div class="form-group">
-                    <label for="exampleInputPassword1">
-                      <span class="material-icons">
-                        vpn_key
-                        </span>
-                      Password</label>
-                    <input type="password" class="form-control mt-1" id="exampleInputPassword1" placeholder="Password">
-                  </div>
-                  <button type="submit" class="btn btn-secondary w-100 mt-3"><a href="personalaccount.html" class="text-white">Log in</a></button>
-                </form>
-                  <div class="modal-footer text-center mx-auto">
-                  <p>Looking to <a href="#"> create an account ?</a></p>
-                  </div>
-            </div>
-        </div>
-      </div>
-    </header>
+          </ul>
+          <a type="button" class="btn btn-outline-light  ml-3 rounded-0 btn-login px-2 m-0" href="index.html" >Log out</a>
+  </div>
+</header>
 
     <!-- main -->
     <main>
-        <h2>Your Account</h2>
-        <div class="account-flex">
-            <div class="account-list">
-                <div class="account-photo">
-                  <img src="images/logo/profile.png" alt="" id="profileImg">
-                </div>
-                <dl>
-                    <dt><a href="personalaccount.html">My Profile</a></dt>
-                    <dt><a href="personal_orderhistory.html">Order History</a></dt>
-                    <dt><a href="#" class="account-current">Reservation</a></dt>
-                    <dt><a href="personal-coupon.html">Coupon</a></dt>
+      <h2>Your Account</h2>
+      <div class="account-flex">
+          <div class="account-list">
+              <div class="account-photo">
+                <img src="images/logo/profile.png" alt="" id="profileImg">
+              </div>
+              <div class="username">
+                <p>John Smith</p>
+              </div>
+              <dl>
+                  <dt><a href="personalaccount.html" class="account-current">My Profile</a></dt>
+                  <dt><a href="personal_orderhistory.html">Order History</a></dt>
+                  <dt><a href="personal-reservation.html">Reservation</a></dt>
+                  <dt><a href="personal-coupon.html">Coupon</a></dt>
                 </dl>
-                <button type="submit" class="btn btn-secondary btn-sm rounded" style="font-size: 10px; background-color: rgb(181, 181, 181); border: none;">Log out</button>
+                <a type="button" class="btn btn-secondary btn-sm rounded" style="font-size: 10px; background-color: rgb(181, 181, 181); border: none;" href="index.html">Log out</a>
             </div>
             <form class="account-form">
                 <div class="form-group">
-                <p>Reservation</p>
+               <dl>
+                <dt>Reservation</dt>
                 </div>
                 <div class="order-group">
                   <div class="order-item date" style="font-weight: 300;">
-                    <p><b>2020/09/02</b>  19:00 
+                    <dd><b>2020/09/02</b>  19:00 
                        <span class="material-icons">
                       people_alt
-                      </span> GUEST:2</p>
+                      </span> GUEST:2</dd>
                   </div>
+                  </dl>
                 </div>    
               </form>
           </div>
