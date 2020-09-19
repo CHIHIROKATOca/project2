@@ -23,81 +23,80 @@
     <link rel="stylesheet" href="style/style.css">
 </head>
 
-<body>
-        <!-- header -->
-        <header class="index container-fluid p-0 m-0 fixed-top">
-            <nav class="show navbar navbar-expand-lg px-4 py-3 m-0" id="nav">
-                <a class="navbar-brand text-uppercase m-0" href="index.html">
-                    <img src="images/logo/logo-nav.png" alt="logo-chak" class="logo">
-                </a>
-                <button class="menu" id="menu" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="height: 30px;">
-               <span class="button-content" tabindex="-1">
-                   <span class="sr-only">Menu</span>
-                   <span class="bar"></span>
-               </span>
-           </button>
-                <!-- nav link -->
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item px-3 current">
-                            Home
-                        </li>
-                        <li class="nav-item px-3">
-                            <a class="nav-link" href="menu.html">Menu</a>
-                        </li>
-                        <li class="nav-item px-3">
-                            <a href="onlineorder.html" class="nav-link" id="nav-text">Order</a>
-                        </li>
-                        <li class="nav-item px-3">
-                            <a class="nav-link" href="reservation.html">Reservation</a>
-                        </li>
-                        <li class="nav-item px-3">
-                            <a class="nav-link" href="location.html" id="nav-text">Location</a>
-                        </li>
-                        <li class="nav-item px-3"><a class="nav-link" href="contact.html" id="nav-text">Contact</a></li>
-                    </ul>
-                    <!-- Button trigger modal -->
-                    <button type="button" class="btn btn-outline-light  ml-3 rounded-0 btn-login" data-toggle="modal" data-target="#exampleModal">Log in</button>
-                </div>
+<body id="contact">
+    <div class="wrapper">
+    <header>
+    <!-- header -->
+    <nav class="navbar navbar-expand-lg px-4 py-3 m-0 navbar-dark" id="nav">
+      <a class="navbar-brand text-uppercase h1" href="index.html">
+          <img src="images/logo/logo-nav.png" alt="logo-chak" class="logo">
+        </a>
+        <button class="menu" id="menu" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="button-content" tabindex="-1">
+                <span class="sr-only">Menu</span>
+                <span class="bar"></span>
+            </span>
+        </button>
+       <!-- nav link -->
+           <div class="collapse navbar-collapse" id="navbarSupportedContent">
+             <ul class="navbar-nav ml-auto">
+               <li class="nav-item px-3 p-0">
+                 <a class="nav-link" href="index.html" id="nav-text">Home</a>
+               </li>
+               <li class="nav-item px-3 current">
+                Menu
+                </li>
+               <li class="nav-item px-3 p-0">
+                 <a class="nav-link" href="reservation.html"  id="nav-text">Reservation</a>
+               </li>
+               <li class="nav-item px-3 p-0">
+                  <a class="nav-link" href="location.html" id="nav-text">Location</a>
+               </li>
+               <li class="nav-item px-3 current p-0">
+                    <a class="nav-link" href="contact.html"  id="nav-text">Contact</a>
+                </li>
+              <!-- Button trigger modal -->
+              <button type="button" class="btn btn-outline-light  ml-3 rounded-0 btn-login" data-toggle="modal" data-target="#exampleModal">Log in</button>
+              </div>
             </nav>
-        </header>
-
-        <!-- Modal -->
-        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog position-relative" role="document">
+             <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog position-relative" role="document">  
                 <div class="circle position-absolute mx-auto"><img src="images/logo/logo-login-02.png" alt="logo" class="logo-login"></div>
                 <div class="modal-content ">
-                    <div class="modal-header position-relative">
-                        <button type="button" class="close m-0 p-0 text-right position-absolute" data-dismiss="modal" aria-label="Close" style="width: 100%; right: 20px;">
-                       <span aria-hidden="true">&times;</span>
-                       </button>
-                    </div>
-                    <!-- Modal text -->
-                    <form>
-                        <div class="form-group">
-                            <label for="exampleInputEmail1">
-                         <span class="material-icons">
-                           local_post_office</span>
-                         User Name or Email address</label>
-                            <input type="email" class="form-control mt-1" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter  User name or Email">
-                        </div>
-                        <div class="form-group">
-                            <label for="exampleInputPassword1">
-                         <span class="material-icons">
-                           vpn_key
-                           </span>
-                         Password</label>
-                            <input type="password" class="form-control mt-1" id="exampleInputPassword1" placeholder="Password">
-                        </div>
-                        <button type="submit" class="btn btn-secondary w-100 mt-3"><a href="personalaccount" class="text-white">Log in</a></button>
-                    </form>
-                    <div class="modal-footer text-center mx-auto">
-                        <p>Looking to <a href="#"> create an account ?</a></p>
-                    </div>
+                <div class="modal-header position-relative">
+                    <button type="button" class="close m-0 p-0 text-right position-absolute" data-dismiss="modal" aria-label="Close" style="width: 100%; right: 20px;">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
                 </div>
+                <!-- Modal text -->
+                <form>
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">
+                      <span class="material-icons">
+                        local_post_office</span>
+                      User Name or Email address</label>
+                    <input type="email" class="form-control mt-1" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter  User name or Email">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputPassword1">
+                      <span class="material-icons">
+                        vpn_key
+                        </span>
+                      Password</label>
+                    <input type="password" class="form-control mt-1" id="exampleInputPassword1" placeholder="Password">
+                  </div>
+                  <button type="submit" class="btn btn-secondary w-100 mt-3"><a href="personalaccount.html" class="text-white">Log in</a></button>
+                </form>
+                  <div class="modal-footer text-center mx-auto">
+                  <p>Looking to <a href="#"> create an account ?</a></p>
+                  </div>
             </div>
         </div>
+      </div>
+    </header>
 
+    <main class="mt-4">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
@@ -720,6 +719,7 @@
     </div>
     </div>
     </section>
+</main>
 
 
 
