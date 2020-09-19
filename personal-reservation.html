@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="icon" 
-      type="image/png" 
+    <link rel="icon"
+      type="image/png"
       href="images/logo/favicon.ico">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
@@ -80,13 +80,13 @@
                 </div>
                 <div class="order-group">
                   <div class="order-item date" style="font-weight: 300;">
-                    <dd><b>2020/09/02</b>  19:00 
+                    <dd><b>2020/09/02</b>  19:00
                        <span class="material-icons">
                       people_alt
                       </span> GUEST:2</dd>
                   </div>
                   </dl>
-                </div>    
+                </div>
               </form>
           </div>
         </main>
@@ -121,23 +121,6 @@
     </div>
 </footer>
 </div>
-<script>
-  $(function(){
-  mw('#modal','#modal_content','#btn_modal','.btn_close');
-  mw('#ModalDetailes','#ModalDetailes_content','#btn_menu','.btn_close');
-});
- 
-function mw(modal, modalContent, btnOpen, btnClose){
-  $(btnOpen).on('click', function() {
-    $(modal).fadeIn();
-  });  
-  $(modal).on('click', function(event) {
-    if(!($(event.target).closest($(modalContent)).length)||($(event.target).closest($(btnClose)).length)){
-      $(modal).fadeOut();
-    }
-  });
-}
-</script>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
