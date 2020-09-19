@@ -79,6 +79,9 @@ img {
     background-size: cover;
 }
 /* --------------Navigation-------------- */
+.btn-login{
+    width: 80px;
+}
 nav{
     transition: 1s;
     background-color: none;
@@ -203,6 +206,16 @@ button.menu:focus,
     width: 80%;
     height: auto;
     margin: 0 auto;
+}
+.circle2{
+    border: 3px solid rgb(255, 255, 255);
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    z-index: 1000;
+    right: 10px;
+    bottom: 10px;
+    margin: 0;
 }
 /* --------------scroll animation-------------- */
 .scroll-wrap{
@@ -762,14 +775,28 @@ button.menu:focus,
     border: 1px solid black;
 }
 .account-form button.btn {
-    background-color: #b83042;
+    background: #ec008c;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #aa3daa, #aa32dd);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #aa3daa, #aa32dd); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #fff;
+    border: 2px solid #eee;
+    border-radius: 35px;
+    font-family: "roboto";
+    font-weight: 400;
     color: white;
     letter-spacing: 1px;
     display: block;
     margin: 0 auto;
 }
 .account-form button.btn:hover {
-    background-color: rgb(184, 48, 66, 0.8);
+    background: #ec008c;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #aa3daa, #aa32dd);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #aa3daa, #aa32dd); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #fff;
+    border: 2px solid #eee;
+    border-radius: 35px;
+    font-family: "roboto";
+    font-weight: 400;
     transition: all 0.3s ease-in-out;
 }
 .account-form button.btn:focus {
@@ -1047,7 +1074,7 @@ main {
     top: -4px;
     left: -3px;
     position: relative;
-    background-color: #b83042;
+    background-color:#aa3daa;
     content: '';
     display: inline-block;
     visibility: visible;
@@ -1066,14 +1093,28 @@ main {
     border: 1px solid black;
 }
 .contact-form button.btn {
-    background-color: #b83042;
+    background: #ec008c;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #aa3daa, #aa32dd);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #aa3daa, #aa32dd); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #fff;
+    border: 2px solid #eee;
+    border-radius: 35px;
+    font-family: "roboto";
+    font-weight: 400;
     color: white;
     letter-spacing: 1px;
     display: block;
     margin: 0 auto;
 }
 .contact-form button.btn:hover {
-    background-color: rgb(184, 48, 66, 0.8);
+    background: #ec008c;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #aa3daa, #aa32dd);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #aa3daa, #aa32dd); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #fff;
+    border: 2px solid #eee;
+    border-radius: 35px;
+    font-family: "roboto";
+    font-weight: 400;
     transition: all 0.3s ease-in-out;
 }
 .contact-form button.btn:focus {
@@ -1132,7 +1173,7 @@ main {
 .store-location dl dt {
     font-weight: normal;
     font-size: 12px;
-    color: #b83042;
+    color:#aa3daa;
     margin-top: 20px;
 }
 .store-location dl dt:first-child {
@@ -1199,13 +1240,26 @@ main {
 }
 
 #reservation button.btn-submit {
+    background: #ec008c;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #aa3daa, #aa32dd);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #aa3daa, #aa32dd); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     color: #fff;
-    background-color: #b83042;
+    border: 2px solid #eee;
+    border-radius: 35px;
+    font-family: "roboto";
+    font-weight: 400;
     display: block;
     margin: 0 auto;
 }
 #reservation button.btn-submit:hover {
-    background-color: rgb(184, 48, 66, 0.8);
+    background: #710345;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #aa3daa, #aa32dd);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #aa3daa, #aa32dd); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #fff;
+    border: 2px solid #eee;
+    border-radius: 35px;
+    font-family: "roboto";
+    font-weight: 400;
     transition: all 0.3s ease-in-out;
 }
 
