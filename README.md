@@ -2,6 +2,7 @@
 This is a responsible web page using html,css,js.
 
 ## Description
+![chak-readme](https://user-images.githubusercontent.com/64046048/93690528-3170d680-fa8e-11ea-8a28-84c09e02c60b.jpg)
 
 We created a website for a Persian restaurant. </br>
 *This shop does not exist.</br>
