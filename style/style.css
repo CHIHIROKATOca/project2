@@ -3,7 +3,7 @@
 html{
     box-sizing: border-box;
 }
-*, 
+*,
 *:before , *:after {
     box-sizing: inherit;
 }
@@ -208,21 +208,82 @@ button.menu:focus,
     margin: 0 auto;
 }
 .circle2{
-    border: 2px solid rgb(255, 255, 255);
-    background: linear-gradient(to bottom, rgb(255, 255, 255, 0.2), rgb(255, 255, 255, 0.5));
+    background: linear-gradient(to bottom, rgb(19, 19, 19), rgba(46, 46, 46, 0.5));
     border-radius: 50%;
     width: 140px;
     height: 140px;
     position: absolute;
     z-index: 1000;
-    right: 10px;
-    bottom: 10px;
+    right: 20px;
+    bottom: 20px;
     margin: 0;
-}
+    animation-name: fadein;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    text-align: center;
+    display: inline-block;
+    border-radius: 50%;
+  }
+  .texts{
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      margin:0;
+      padding:0;
+      width: 80%;
+
+  }
+  .circle2 hr{
+      margin:4px;
+      background-color: white;
+  }
+  #circle2text{
+        margin: 0;
+        padding: 0;
+        line-height: 1.1;
+  }
+  .icon-1{
+      width: 28%;
+      margin: 0 auto;
+      padding: 0;
+      margin-top: -15px;
+  }
+  .text-1{
+        font-size: 13px;
+        font-weight: 400;
+        color: rgb(255, 255, 255, 0.6);
+        line-height: 1;
+  }
+  .text-2{
+        font-family: 'Playfair Display', serif;
+        color: white;
+        font-weight: 400;
+        font-size: 27px;
+        padding: 0;
+        line-height: 1;
+  }
+  .text-3{
+        font-size: 13px;
+        padding: 0;
+        margin: 0;
+        color: rgb(255, 255, 255, 0.6);
+    }
+
+  @keyframes fadein {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    }
 /* --------------scroll animation-------------- */
 
 .js-fadein {
-    opacity: 0; 
+    opacity: 0;
     visibility: hidden;
     transform: translateY(40px);
     transition: all 1s;
@@ -232,7 +293,7 @@ button.menu:focus,
     visibility: visible;
     transform: translateY(0px);
   }
-  
+
 .scroll-wrap{
     position: absolute;
     bottom: 5%;
@@ -311,11 +372,17 @@ button.menu:focus,
     color: #c4c4c4;
   }
 form{
+    width: 100%;
     padding:40px;
 }
-label{
-    margin:0;
-    vertical-align: middle;
+#menu .label-wrapper{
+    width: 100%;
+}
+#menu label{
+    width: 24.5%;
+    height: 60px;
+    padding:20px;
+    text-align: center;
 }
 .material-icons{
     font-size: 23px;
@@ -339,9 +406,9 @@ label{
     height: 110px;
     background-color: rgb(62, 62, 67);
     border-radius: 60%;
-    top: -55px; 
-    right: 0; 
-    left: 0; 
+    top: -55px;
+    right: 0;
+    left: 0;
     z-index: 900;
     position: relative;
 }
@@ -361,9 +428,9 @@ label{
     color:rgb(72, 71, 66);
     font-family: 'Playfair Display', serif;
     border-radius: none;
-    /* box-shadow: 0 1px 1px rgba(0,0,0,0.15), 
-    0 2px 2px rgba(0,0,0,0.15), 
-    0 4px 4px rgba(0,0,0,0.15), 
+    /* box-shadow: 0 1px 1px rgba(0,0,0,0.15),
+    0 2px 2px rgba(0,0,0,0.15),
+    0 4px 4px rgba(0,0,0,0.15),
     0 8px 8px rgba(0,0,0,0.15); */
 }
 button:focus{
@@ -419,7 +486,7 @@ button:focus{
     border-radius: 35px;
     font-family: "roboto";
     font-weight: 400;
-} 
+}
 .btn-pink-moon:hover {
     background: #b8006e;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #8c258c, #8219b0);  /* Chrome 10-25, Safari 5.1-6 */
@@ -429,7 +496,7 @@ button:focus{
     border-radius: 35px;
     font-family: "roboto";
     font-weight: 400;
-} 
+}
 .reservation .material-icons{
     font-size: 15px;
 }
@@ -450,11 +517,11 @@ button:focus{
 }
 .gallery-1{
     display: block;
-    object-fit: cover; 
+    object-fit: cover;
 }
 .gallery-4{
     width: auto;
-    object-fit: cover; 
+    object-fit: cover;
 }
 /* --------------Hour-------------- */
 .row h2{
@@ -510,7 +577,7 @@ button:focus{
 .footer-wrapper2{
     display: flex;
     align-items:flex-end;
-} 
+}
 .footer-sns{
     text-align:right;
 }
@@ -549,7 +616,7 @@ button:focus{
         display: block;
         align-items:center;
         margin: 0 auto;
-    } 
+    }
     .footer-sns{
         display: block;
         align-items:center;
@@ -658,6 +725,13 @@ button.menu:focus,
     }
 }
 @media(max-width:550px){
+    .circle2{
+        width: 120px;
+        height: 120px;
+    }
+    .text-2{
+        font-size: 20px;
+  }
     .account-list{
         text-align: center;
         padding-bottom: 20px;
@@ -667,7 +741,7 @@ button.menu:focus,
         margin:0 auto;
     }
     #profileImg{
-        margin:0 auto;
+        margin:0 auto 10px;
     }
 }
     /* -----Slideshow----- */
@@ -679,7 +753,7 @@ button.menu:focus,
 
     .carousel-item img{
         height: 900px;
-        object-fit: cover; 
+        object-fit: cover;
         z-index: -1000;
     }
     /* -----Concept------ */
@@ -835,14 +909,22 @@ a.form-Edit{
 
 }
 .account-photo img{
-        border-radius: 50%;  
-        width:  90px;      
+        border-radius: 50%;
+        width:  90px;
         height: 90px;
         margin-left: 0;
         margin-bottom: 10px;
 }
+#profileImg{
+    margin-bottom:10px;
+}
+.username{
+    margin:20px auto;
+    font-weight: 400;
+    font-size: larger;
+}
 .account-edit{
-    float: left;
+    line-height: 1.3rem;
 }
 .account-form .form-group{
     margin-bottom: 30px;
@@ -851,6 +933,28 @@ a.form-Edit{
     text-decoration: none;
     font-size: 14px;
     font-weight: 400;
+}
+#account dl {
+    color: #666;
+    font-weight: 200;
+    margin:0;
+    padding:0;
+    margin-bottom: 5%;
+}
+#account dl dt {
+    font-weight: normal;
+    margin:0;
+    padding:0;
+    line-height: 1.3rem;
+    margin-bottom: 5%;
+
+}
+#account dl dd {
+    font-size: 13px;
+    margin:0;
+    padding:0;
+    line-height: 1.3rem;
+
 }
 /* -------------personal account(order history)---------------- */
 .order-group{
@@ -861,11 +965,19 @@ a.form-Edit{
 }
 .order-item{
     padding-right: 10px;
-    font-size: 15px;
+    color: #666;
+    font-size: 14px;
+}
+.order-item dt{
+    padding-right: 10px;
+    color: #666;
+    font-size: 14px;
+    font-weight: 200;
 }
 
 .order-item .btn{
     font-size: 8px;
+    padding: 0;
 }
 
 /* ----------order detaile modal ----------- */
@@ -906,7 +1018,7 @@ ul.price{
 }
 ul.item{
     padding:0;
-    margin:0; 
+    margin:0;
 }
 .order-list .item li{
     list-style: none;
@@ -976,9 +1088,9 @@ ul.item{
     background: linear-gradient(to right, #aa3daa, #aa32dd); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     margin-top: 30px;
     opacity: 0.5;
-    box-shadow: 0 1px 1px rgba(0,0,0,0.15), 
-    0 2px 2px rgba(0,0,0,0.15), 
-    0 4px 4px rgba(0,0,0,0.15), 
+    box-shadow: 0 1px 1px rgba(0,0,0,0.15),
+    0 2px 2px rgba(0,0,0,0.15),
+    0 4px 4px rgba(0,0,0,0.15),
     0 8px 8px rgba(0,0,0,0.15);
     outline: 2px solid rgb(255, 255, 255); /* 線幅、線のスタイル、カラー */
     outline-offset: -10px; /* 対象の要素からの距離、マイナス(内側)にも対応 */
@@ -1000,9 +1112,9 @@ ul.item{
     background: linear-gradient(to right, #3d84aa, #32aadd); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     margin-top: 30px;
     opacity: 0.5;
-    box-shadow: 0 1px 1px rgba(0,0,0,0.15), 
-    0 2px 2px rgba(0,0,0,0.15), 
-    0 4px 4px rgba(0,0,0,0.15), 
+    box-shadow: 0 1px 1px rgba(0,0,0,0.15),
+    0 2px 2px rgba(0,0,0,0.15),
+    0 4px 4px rgba(0,0,0,0.15),
     0 8px 8px rgba(0,0,0,0.15);
     outline: 2px solid rgb(255, 255, 255); /* 線幅、線のスタイル、カラー */
     outline-offset: -10px; /* 対象の要素からの距離、マイナス(内側)にも対応 */
@@ -1011,7 +1123,7 @@ ul.item{
 
 .form-group-coupon{
     display: flex;
-    
+
 }
 
 /* ==========================KIMI========================== */
@@ -1292,8 +1404,9 @@ main {
     #reservation form {
         padding: 0;
     }
-} 
+}
 /* ==========================Afshin========================== */
+/* ------menuStyle------- */
 input[name=tabs]:checked+label {
     font-weight: bolder;
     border: solid 1px #fff;
@@ -1308,7 +1421,9 @@ input[name=tabs]+label {
     padding-bottom: 15px;
     padding-left: 45px;
     padding-right: 45px;
-    background: red;
+    background: #ec008c;  /* changed purple */
+    background: -webkit-linear-gradient(to right, #aa3daa, #aa32dd);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #aa3daa, #aa32dd); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 20px;
     border-top-left-radius: 10px;
@@ -1322,8 +1437,8 @@ input[name=tabs]+label {
 
 .center {
     margin: auto;
-    width: 80%;
-    height: 90%;
+    width: 100%;
+    /* height: 90%; */
     padding: 40px;
     margin-bottom: 50px;
     box-sizing: border-box;
@@ -1363,7 +1478,7 @@ input[name=tabs]+label {
     width: 210px;
     height: 250px;
 }
-
+/* -------order.css--------- */
 .single-food {
     border: 1px solid #f2eee2;
     margin-bottom: 30px;

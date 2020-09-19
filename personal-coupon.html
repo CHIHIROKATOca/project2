@@ -49,48 +49,10 @@
            <li class="nav-item px-3">
              <a class="nav-link  p-0" href="contact.html" id="nav-text">Contact</a>
            </li>
-        </ul>
-              <!-- Button trigger modal -->
-              <button type="button" class="btn btn-outline-light  ml-3 rounded-0 btn-login" data-toggle="modal" data-target="#exampleModal">Log in</button>
-              </div>
-            </nav>
-             <!-- Modal -->
-            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-              <div class="modal-dialog position-relative" role="document">  
-                <div class="circle position-absolute mx-auto"><img src="images/logo/logo-login-02.png" alt="logo" class="logo-login"></div>
-                <div class="modal-content ">
-                <div class="modal-header position-relative">
-                    <button type="button" class="close m-0 p-0 text-right position-absolute" data-dismiss="modal" aria-label="Close" style="width: 100%; right: 20px;">
-                    <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <!-- Modal text -->
-                <form>
-                  <div class="form-group">
-                    <label for="exampleInputEmail1">
-                      <span class="material-icons">
-                        local_post_office</span>
-                      User Name or Email address</label>
-                    <input type="email" class="form-control mt-1" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter  User name or Email">
-                  </div>
-                  <div class="form-group">
-                    <label for="exampleInputPassword1">
-                      <span class="material-icons">
-                        vpn_key
-                        </span>
-                      Password</label>
-                    <input type="password" class="form-control mt-1" id="exampleInputPassword1" placeholder="Password">
-                  </div>
-                  <button type="submit" class="btn btn-secondary w-100 mt-3"><a href="personalaccount.html" class="text-white">Log in</a></button>
-                </form>
-                  <div class="modal-footer text-center mx-auto">
-                  <p>Looking to <a href="#"> create an account ?</a></p>
-                  </div>
-            </div>
-        </div>
-      </div>
-    </header>
-
+          </ul>
+          <a type="button" class="btn btn-outline-light  ml-3 rounded-0 btn-login px-2 m-0" href="index.html" >Log out</a>
+  </div>
+</header>
     <!-- main -->
     <main>
         <h2>Your Account</h2>
@@ -99,16 +61,21 @@
                 <div class="account-photo">
                   <img src="images/logo/profile.png" alt="" id="profileImg">
                 </div>
+                <div class="username">
+                  <p>John Smith</p>
+                </div>
                 <dl>
                     <dt><a href="personalaccount.html" class="account-current">My Profile</a></dt>
                     <dt><a href="personal_orderhistory.html">Order History</a></dt>
                     <dt><a href="personal-reservation.html">Reservation</a></dt>
-                    <dt><a href="#">Coupon</a></dt>
-                </dl>
-                <button type="submit" class="btn btn-secondary btn-sm rounded" style="font-size: 10px; background-color: rgb(181, 181, 181); border: none;">Log out</button>
-            </div>
+                    <dt><a href="personal-coupon.html">Coupon</a></dt>
+                  </dl>
+                  <a type="button" class="btn btn-secondary btn-sm rounded" style="font-size: 10px; background-color: rgb(181, 181, 181); border: none;" href="index.html">Log out</a>
+              </div>
             <form class="account-form">
-              <h5>Guest Coupon </h5>
+              <dl class="m-0">
+              <dt class="m-0">Guest Coupon </dt>
+              </dl>
                 <div class="form-group-coupon">
                 <div class="coupon">
                   <p style="font-size: 12px;">Coupon 2020 Sep.10 - Nov.4</p><p style="font-size: 25px; font-weight: 500;" class="mt-0 p-0">5%OFF</p></div>
@@ -117,12 +84,12 @@
                 </div> 
                 <hr>
               <div class="form-group reserve-notice">
-                <label class="c-form-ttl">Notice</label>
+                <label class="c-form-ttl mb-3">Notice</label>
                 <dl>
-                    <dt style="height: 15px;">*</dt>
-                    <dd style="height: 15px;">Please present it to the clerk when you enter.</dd>
-                    <dt style="height: 15px;">*</dt>
-                    <dd style="height: 15px;">Cannot be used in conjunction with other coupons.</dd>
+                    <dt class="mb-1">*</dt>
+                    <dd class="mb-1">Please present it to the clerk when you enter.</dd>
+                    <dt class="mb-1">*</dt>
+                    <dd class="mb-1">Cannot be used in conjunction with other coupons.</dd>
                 </dl>
             </div>
               </div>  
