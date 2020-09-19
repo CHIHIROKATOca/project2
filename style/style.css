@@ -208,9 +208,11 @@ button.menu:focus,
     margin: 0 auto;
 }
 .circle2{
-    border: 3px solid rgb(255, 255, 255);
-    width: 150px;
-    height: 150px;
+    border: 2px solid rgb(255, 255, 255);
+    background: linear-gradient(to bottom, rgb(255, 255, 255, 0.2), rgb(255, 255, 255, 0.5));
+    border-radius: 50%;
+    width: 140px;
+    height: 140px;
     position: absolute;
     z-index: 1000;
     right: 10px;
@@ -218,6 +220,19 @@ button.menu:focus,
     margin: 0;
 }
 /* --------------scroll animation-------------- */
+
+.js-fadein {
+    opacity: 0; 
+    visibility: hidden;
+    transform: translateY(40px);
+    transition: all 1s;
+  }
+  .js-fadein.is-show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0px);
+  }
+  
 .scroll-wrap{
     position: absolute;
     bottom: 5%;
@@ -346,10 +361,10 @@ label{
     color:rgb(72, 71, 66);
     font-family: 'Playfair Display', serif;
     border-radius: none;
-    box-shadow: 0 1px 1px rgba(0,0,0,0.15), 
+    /* box-shadow: 0 1px 1px rgba(0,0,0,0.15), 
     0 2px 2px rgba(0,0,0,0.15), 
     0 4px 4px rgba(0,0,0,0.15), 
-    0 8px 8px rgba(0,0,0,0.15);
+    0 8px 8px rgba(0,0,0,0.15); */
 }
 button:focus{
     border:none;
@@ -399,6 +414,16 @@ button:focus{
     background: #ec008c;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #aa3daa, #aa32dd);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #aa3daa, #aa32dd); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #fff;
+    border: 2px solid #eee;
+    border-radius: 35px;
+    font-family: "roboto";
+    font-weight: 400;
+} 
+.btn-pink-moon:hover {
+    background: #b8006e;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #8c258c, #8219b0);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #8e1e8e, #741b9a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     color: #fff;
     border: 2px solid #eee;
     border-radius: 35px;
@@ -789,9 +814,9 @@ button.menu:focus,
     margin: 0 auto;
 }
 .account-form button.btn:hover {
-    background: #ec008c;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #aa3daa, #aa32dd);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #aa3daa, #aa32dd); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #b8006e;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #8c258c, #8219b0);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #8e1e8e, #741b9a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     color: #fff;
     border: 2px solid #eee;
     border-radius: 35px;
@@ -1107,9 +1132,9 @@ main {
     margin: 0 auto;
 }
 .contact-form button.btn:hover {
-    background: #ec008c;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #aa3daa, #aa32dd);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #aa3daa, #aa32dd); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #b8006e;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #8c258c, #8219b0);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #8e1e8e, #741b9a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     color: #fff;
     border: 2px solid #eee;
     border-radius: 35px;
@@ -1252,9 +1277,9 @@ main {
     margin: 0 auto;
 }
 #reservation button.btn-submit:hover {
-    background: #710345;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #aa3daa, #aa32dd);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #aa3daa, #aa32dd); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #b8006e;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #8c258c, #8219b0);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #8e1e8e, #741b9a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     color: #fff;
     border: 2px solid #eee;
     border-radius: 35px;
