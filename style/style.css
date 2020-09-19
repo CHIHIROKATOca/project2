@@ -1098,8 +1098,6 @@ main {
         margin: 0 0 0 auto;
     }
 }
-
-
 /* ----------------- Location ----------------- */
 #location header {
     background: url(../images/Pictures-bigsize/chuttersnap-DOBIZ_sqgXM-unsplash.jpg) no-repeat center bottom fixed;
@@ -1166,7 +1164,6 @@ main {
         margin-bottom: 0;
     }
 }
-
 /* ----------------- Reservation ----------------- */
 #reservation header {
     background: url(../images/Pictures-bigsize/davide-cantelli-jpkfc5_d-DI-unsplash.jpg) no-repeat center bottom fixed;
@@ -1377,4 +1374,3 @@ input[name=tabs]+label {
     padding-left: 5px;
     font-weight: 300;
 }
-
