@@ -1524,8 +1524,8 @@ input[name=tabs]+label {
 .single-food figure{
     position: relative;
     overflow: hidden;
-    width: 180px;
-    height: 190px;
+    max-width: 100%;
+    height: 180px;
     object-fit: cover;
     margin: 0 auto;
     object-fit: cover;
