@@ -1,0 +1,19 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../CICCC_WebClass/project1"
+		},
+		{
+			"path": "../CICCC_WebClass/CSS"
+		},
+		{
+			"path": "../menu"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "project2"
+	}
+}

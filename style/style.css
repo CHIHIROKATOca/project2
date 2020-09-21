@@ -375,15 +375,20 @@ form{
     width: 100%;
     padding:40px;
 }
-
+.menu-wrapper{
+    text-align: center;
+}
 #menu .label-wrapper{
     width: 100%;
 }
 #menu label{
-    width: 24.5%;
+    width: 24%;
     height: 60px;
     padding:20px;
     text-align: center;
+}
+#menu-mobile{
+    display: none;
 }
 .material-icons{
     font-size: 23px;
@@ -454,6 +459,28 @@ button:focus{
     color:rgb(72, 71, 66, 0.7);
 
 }
+
+@media(max-width:992px){
+    #menu .label-wrapper{
+        width: 100%;
+    }
+    #menu label{
+        width: 49%;
+        height: 50px;
+        padding:10px;
+        text-align: center;
+    }
+}
+
+@media(max-width:575px){
+    #menu label{
+        width: 100%;
+        height: 50px;
+        padding:10px;
+        text-align: center;
+    }
+}
+
 /* --------------Eat together(Reservation)-------------- */
 .reservation{
     margin:90px auto;
@@ -1474,23 +1501,34 @@ input[name=tabs]+label {
 .mb-10 {
     margin-bottom: 10px;
 }
-
-.menuPic {
-    width: 210px;
-    height: 250px;
-}
 /* -------order.css--------- */
+.menuPic {
+    position: absolute;
+    width: auto;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
 .single-food {
+    width: 100%;
+    height: auto;
+    padding: 0;
     border: 1px solid #f2eee2;
     margin-bottom: 30px;
     position: relative;
-    overflow: hidden;
 }
 
-.single-food figure {
+.single-food figure{
     position: relative;
-    margin: 0;
-    text-align: center;
+    overflow: hidden;
+    width: 200px;
+    height: 210px;
+    object-fit: cover;
+    margin: 0 auto;
+    object-fit: cover;
 }
 
 .single-food figure>a {
