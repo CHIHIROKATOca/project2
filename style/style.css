@@ -1,5 +1,3 @@
-/* ==========================CHIHIRO========================== */
-/* ---------basic setting--------- */
 html{
     box-sizing: border-box;
 }
@@ -50,7 +48,6 @@ img {
 .container{
     margin:0 auto;
 }
-/* -----loading----- */
 .hidden{
     display: none;
 }
@@ -73,12 +70,10 @@ img {
     left: 50%;
     transform: translate(-50%, -50%);
 }
-/* --------------Header-------------- */
 #contact header {
     background-color: transparent;
     background-size: cover;
 }
-/* --------------Navigation-------------- */
 .btn-login{
     width: 80px;
 }
@@ -170,8 +165,6 @@ button.menu:focus,
         margin-top: 30px;
     }
 }
-
-/* --------------Slide show-------------- */
 .carousel-inner{
     width: 100%;
     max-height: 650px;
@@ -280,8 +273,6 @@ button.menu:focus,
         transform: translateY(0);
     }
     }
-/* --------------scroll animation-------------- */
-
 .js-fadein {
     opacity: 0;
     visibility: hidden;
@@ -362,7 +353,6 @@ button.menu:focus,
     transform: translate3d(-50%, -8px, 0);
   }
 }
-/* --------------Modal-------------- */
 .form-group .form-control{
     box-shadow: inset 0 0 5px rgba(162, 162, 162, 0.8);
     background-color: rgb(228, 228, 228);
@@ -434,16 +424,11 @@ form{
     color:rgb(72, 71, 66);
     font-family: 'Playfair Display', serif;
     border-radius: none;
-    /* box-shadow: 0 1px 1px rgba(0,0,0,0.15),
-    0 2px 2px rgba(0,0,0,0.15),
-    0 4px 4px rgba(0,0,0,0.15),
-    0 8px 8px rgba(0,0,0,0.15); */
 }
 button:focus{
     border:none;
     outline:none;
 }
-/* --------------Concept-------------- */
 .concept{
     margin:90px auto;
     width:70%;
@@ -480,8 +465,6 @@ button:focus{
         text-align: center;
     }
 }
-
-/* --------------Eat together(Reservation)-------------- */
 .reservation{
     margin:90px auto;
     color: white;
@@ -506,9 +489,9 @@ button:focus{
     background-image: url("../images/Pictures-bigsize/re-mehrshad-rajabi-BRVpzGwNzzI-unsplash.jpg");
   }
 .btn-pink-moon {
-    background: #ec008c;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #aa3daa, #aa32dd);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #aa3daa, #aa32dd); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #ec008c;
+    background: -webkit-linear-gradient(to right, #aa3daa, #aa32dd);
+    background: linear-gradient(to right, #aa3daa, #aa32dd);
     color: #fff;
     border: 2px solid #eee;
     border-radius: 35px;
@@ -516,9 +499,9 @@ button:focus{
     font-weight: 400;
 }
 .btn-pink-moon:hover {
-    background: #b8006e;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #8c258c, #8219b0);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #8e1e8e, #741b9a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #b8006e;
+    background: -webkit-linear-gradient(to right, #8c258c, #8219b0);
+    background: linear-gradient(to right, #8e1e8e, #741b9a);
     color: #fff;
     border: 2px solid #eee;
     border-radius: 35px;
@@ -531,7 +514,6 @@ button:focus{
 .menu-btn{
     margin-top:50px;
 }
-/* -------------Gallery------------ */
 .gallery::before{
     content: '';
     background-color:  rgba(255, 255, 255, 0.2);
@@ -551,7 +533,6 @@ button:focus{
     width: auto;
     object-fit: cover;
 }
-/* --------------Hour-------------- */
 .row h2{
     font-size:1.5rem;
     padding-bottom: 10px;
@@ -582,7 +563,6 @@ button:focus{
     font-weight: 300;
     letter-spacing:0;
 }
-/* --------------Footer-------------- */
 .fab{
     font-size:25px;
     margin:8px;
@@ -620,11 +600,9 @@ button:focus{
 }
 
 @media(max-width:992px){
-    /* -------nav------ */
     button.menu {
         display: block;
     }
-    /* -----Concept------ */
     .concept-text p{
        font-size:15px;
     }
@@ -635,7 +613,6 @@ button:focus{
     .gallery-4 {
         display: none;
     }
-    /* -----Footer------ */
     .footer-wrapper{
         display: block;
         text-align: center;
@@ -663,7 +640,6 @@ button:focus{
     }
     }
 @media(max-width:768px){
-    /* --------------Navigation-------------- */
 nav{
     transition: 1s;
     background-color: none;
@@ -772,7 +748,6 @@ button.menu:focus,
         margin:0 auto 10px;
     }
 }
-    /* -----Slideshow----- */
     .carousel-inner{
         width: auto;
         height: 900px;
@@ -784,7 +759,6 @@ button.menu:focus,
         object-fit: cover;
         z-index: -1000;
     }
-    /* -----Concept------ */
     .concept{
         margin:80px auto;
         width:80%;
@@ -792,7 +766,6 @@ button.menu:focus,
     .concept-text p{
        font-size:14px;
     }
-    /* -----Hour------ */
     .hour-container h2{
         border-bottom: none;
         border-top: 1px solid rgb(53, 48, 45);
@@ -801,8 +774,6 @@ button.menu:focus,
         padding:30px;
     }
 }
-
-/* -------------personal account(top page)---------------- */
 #account header {
     background: url(../images/Pictures-bigsize/kenny-luo-7IiPopynx18-unsplash.jpg) no-repeat center center fixed;
     background-size: cover;
@@ -898,9 +869,9 @@ button.menu:focus,
     border: 1px solid black;
 }
 .account-form button.btn {
-    background: #ec008c;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #aa3daa, #aa32dd);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #aa3daa, #aa32dd); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #ec008c;
+    background: -webkit-linear-gradient(to right, #aa3daa, #aa32dd);
+    background: linear-gradient(to right, #aa3daa, #aa32dd);
     color: #fff;
     border: 2px solid #eee;
     border-radius: 35px;
@@ -912,9 +883,9 @@ button.menu:focus,
     margin: 0 auto;
 }
 .account-form button.btn:hover {
-    background: #b8006e;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #8c258c, #8219b0);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #8e1e8e, #741b9a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #b8006e;
+    background: -webkit-linear-gradient(to right, #8c258c, #8219b0);
+    background: linear-gradient(to right, #8e1e8e, #741b9a);
     color: #fff;
     border: 2px solid #eee;
     border-radius: 35px;
@@ -980,7 +951,6 @@ a.form-Edit{
     line-height: 1.3rem;
 
 }
-/* -------------personal account(order history)---------------- */
 .order-group{
     display: flex;
     height: 30px;
@@ -998,14 +968,10 @@ a.form-Edit{
     font-size: 14px;
     font-weight: 200;
 }
-
 .order-item .btn{
     font-size: 8px;
     padding: 0;
 }
-
-/* ----------order detaile modal ----------- */
-
 #ModalDetailes .modal-header{
     border: none;
 }
@@ -1107,17 +1073,17 @@ ul.item{
     text-align: center;
     font-family: 'Roboto';
     font-weight: 400;
-    background: #9a5c81;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #aa3daa, #aa32dd);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #aa3daa, #aa32dd); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #9a5c81;
+    background: -webkit-linear-gradient(to right, #aa3daa, #aa32dd);
+    background: linear-gradient(to right, #aa3daa, #aa32dd);
     margin-top: 30px;
     opacity: 0.5;
     box-shadow: 0 1px 1px rgba(0,0,0,0.15),
     0 2px 2px rgba(0,0,0,0.15),
     0 4px 4px rgba(0,0,0,0.15),
     0 8px 8px rgba(0,0,0,0.15);
-    outline: 2px solid rgb(255, 255, 255); /* 線幅、線のスタイル、カラー */
-    outline-offset: -10px; /* 対象の要素からの距離、マイナス(内側)にも対応 */
+    outline: 2px solid rgb(255, 255, 255);
+    outline-offset: -10px;
     margin-right: 20px;
     border-radius: 10px;
 
@@ -1131,17 +1097,17 @@ ul.item{
     text-align: center;
     font-family: 'Roboto';
     font-weight: 400;
-    background: #46b15c;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #34e97c, #a4dd32);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #3d84aa, #32aadd); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #46b15c;
+    background: -webkit-linear-gradient(to right, #34e97c, #a4dd32);
+    background: linear-gradient(to right, #3d84aa, #32aadd);
     margin-top: 30px;
     opacity: 0.5;
     box-shadow: 0 1px 1px rgba(0,0,0,0.15),
     0 2px 2px rgba(0,0,0,0.15),
     0 4px 4px rgba(0,0,0,0.15),
     0 8px 8px rgba(0,0,0,0.15);
-    outline: 2px solid rgb(255, 255, 255); /* 線幅、線のスタイル、カラー */
-    outline-offset: -10px; /* 対象の要素からの距離、マイナス(内側)にも対応 */
+    outline: 2px solid rgb(255, 255, 255);
+    outline-offset: -10px;
     border-radius: 10px;
 }
 
@@ -1149,9 +1115,6 @@ ul.item{
     display: flex;
 
 }
-
-/* ==========================KIMI========================== */
-/* ----------------- Contact ------------------- */
 .wrapper {
     display: flex;
     justify-content: space-between;
@@ -1254,9 +1217,9 @@ main {
     border: 1px solid black;
 }
 .contact-form button.btn {
-    background: #ec008c;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #aa3daa, #aa32dd);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #aa3daa, #aa32dd); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #ec008c;
+    background: -webkit-linear-gradient(to right, #aa3daa, #aa32dd);
+    background: linear-gradient(to right, #aa3daa, #aa32dd);
     color: #fff;
     border: 2px solid #eee;
     border-radius: 35px;
@@ -1268,9 +1231,9 @@ main {
     margin: 0 auto;
 }
 .contact-form button.btn:hover {
-    background: #b8006e;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #8c258c, #8219b0);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #8e1e8e, #741b9a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #b8006e;
+    background: -webkit-linear-gradient(to right, #8c258c, #8219b0);
+    background: linear-gradient(to right, #8e1e8e, #741b9a);
     color: #fff;
     border: 2px solid #eee;
     border-radius: 35px;
@@ -1300,7 +1263,6 @@ main {
         margin: 0 0 0 auto;
     }
 }
-/* ----------------- Location ----------------- */
 #location header {
     background: url(../images/Pictures-bigsize/chuttersnap-DOBIZ_sqgXM-unsplash.jpg) no-repeat center bottom fixed;
     background-size: cover;
@@ -1366,7 +1328,6 @@ main {
         margin-bottom: 0;
     }
 }
-/* ----------------- Reservation ----------------- */
 #reservation header {
     background: url(../images/Pictures-bigsize/davide-cantelli-jpkfc5_d-DI-unsplash.jpg) no-repeat center bottom fixed;
     background-size: cover;
@@ -1403,9 +1364,9 @@ main {
 }
 
 #reservation button.btn-submit {
-    background: #ec008c;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #aa3daa, #aa32dd);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #aa3daa, #aa32dd); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #ec008c;
+    background: -webkit-linear-gradient(to right, #aa3daa, #aa32dd);
+    background: linear-gradient(to right, #aa3daa, #aa32dd);
     color: #fff;
     border: 2px solid #eee;
     border-radius: 35px;
@@ -1415,9 +1376,9 @@ main {
     margin: 0 auto;
 }
 #reservation button.btn-submit:hover {
-    background: #b8006e;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #8c258c, #8219b0);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #8e1e8e, #741b9a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #b8006e;
+    background: -webkit-linear-gradient(to right, #8c258c, #8219b0);
+    background: linear-gradient(to right, #8e1e8e, #741b9a);
     color: #fff;
     border: 2px solid #eee;
     border-radius: 35px;
@@ -1431,8 +1392,6 @@ main {
         padding: 0;
     }
 }
-/* ==========================Afshin========================== */
-/* ------menuStyle------- */
 #menu-order header {
     background: url(../images/Pictures-bigsize/re-nils-stahl-BCkLxilDvJU-unsplash.jpg) no-repeat center center fixed;
     background-size: cover;
@@ -1451,9 +1410,9 @@ input[name=tabs]+label {
     padding-bottom: 15px;
     padding-left: 45px;
     padding-right: 45px;
-    background: #ec008c;  /* changed purple */
-    background: -webkit-linear-gradient(to right, #aa3daa, #aa32dd);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #aa3daa, #aa32dd); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #ec008c;
+    background: -webkit-linear-gradient(to right, #aa3daa, #aa32dd);
+    background: linear-gradient(to right, #aa3daa, #aa32dd);
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 20px;
     border-top-left-radius: 10px;
@@ -1468,7 +1427,6 @@ input[name=tabs]+label {
 .center {
     margin: auto;
     width: 100%;
-    /* height: 90%; */
     padding: 40px;
     margin-bottom: 50px;
     box-sizing: border-box;
@@ -1499,11 +1457,9 @@ input[name=tabs]+label {
 #tab5:checked~#tab-content5 {
     display: block;
 }
-
 .mb-10 {
     margin-bottom: 10px;
 }
-/* -------order.css--------- */
 .menuPic {
     position: absolute;
     max-width: 150%;
