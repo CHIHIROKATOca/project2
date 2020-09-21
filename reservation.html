@@ -113,22 +113,29 @@
                             });
                         </script>
                     </div>
-            <!-- preference time -->
-            <div class="form-group">
-                <label class="c-form-ttl">Time</label><span class="c-label-required">* Required</span>
-                <select class="form-control" name="reserve_request_time" id="reserve_request_start_time" aria-invalide="false">
-                <option value="11:30" label="11:30" selected></option>
-                <option value="12:00" label="12:00"></option>
-                <option value="13:00" label="13:00"></option>
-                <option value="14:00" label="14:00"></option>
-                <option value="15:00" label="15:00"></option>
-                <option value="16:00" label="16:00"></option>
-                <option value="17:00" label="17:00"></option>
-                <option value="18:00" label="18:00"></option>
-                <option value="19:00" label="19:00"></option>
-                <option value="20:00" label="20:00"></option>
-              </select>
-            </div>
+                    <form>
+                      <div class="form-group">
+                        <label for="exampleFormControlInput1">Email address</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                      </div>
+                    </form>
+                      <!-- preference time -->
+                      <div class="form-group">
+                        <label class="c-form-ttl">Time</label><span class="c-label-required">* Required</span>
+                        <select class="form-control" id="exampleFormControlSelect1">
+                          <option class="selected">11:30</option>
+                          <option>12:00</option>
+                          <option>13:00</option>
+                          <option>14:00</option>
+                          <option>15:00</option>
+                          <option>16:00</option>
+                          <option>17:00</option>
+                          <option>18:00</option>
+                          <option>19:00</option>
+                          <option>20:00</option>
+                          <option>23:00</option>
+                        </select>
+                      </div>
             <!-- Phone number -->
             <div class="form-group">
                 <label class="c-form-ttl">Phone Number</label>
@@ -136,16 +143,21 @@
             </div>
             <!-- Numbers of guests -->
             <div class="form-group">
-                <label class="c-form-ttl">Number of Guests </label>
-                <select class="form-control" name="reserve_request_num" id="reserve_request_number_of_persons" aria-invalid="false">
-                <option value="1" label="1" selected></option>
-                <option value="2" label="2"></option>
-                <option value="3" label="3"></option>
-                <option value="4" label="4"></option>
-                <option value="5" label="5"></option>
-                        <option value="More than 6" label="More than 6"></option>
-                      </select>
-            </div>
+              <label class="c-form-ttl">Number of Guests </label>
+              <select class="form-control" id="exampleFormControlSelect1">
+                <option class="selected">1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+                <option>9</option>
+                <option>10</option>
+                <option>11</option>
+              </select>
+              </div>
             <!-- Message -->
             <div class="form-group">
                 <label class="c-form-ttl">Message</label>
@@ -199,6 +211,7 @@
         </div>
     </footer>
     </div>
+
     <link href="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.4.0/css/pikaday.min.css" rel="stylesheet" type="text/css" />
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>

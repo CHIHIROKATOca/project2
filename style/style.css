@@ -1384,9 +1384,11 @@ main {
     font-size: 13px;
     color: #666;
 }
+
 .reserve-notice .c-form-ttl {
     margin-bottom: 7px;
     font-weight: 500;
+    color: #1f2d30;
 }
 .reserve-notice dl {
     display: flex;
