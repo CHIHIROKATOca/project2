@@ -14,14 +14,17 @@
   <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
   <link rel="stylesheet" href="style/style.css">
   <script src="js/scroll.js"></script>
-  <script src="js/loading.js" defer></script>
+  <script src="js/login.js" defer></script>
+  <!-- <script src="js/loading.js" defer></script> -->
   <script src="js/menu.js" defer></script>
+  <script src="js/afterlogin.js" defer></script>
+
 </head>
 <body>
-  <div id="showloading">
+  <!-- <div id="showloading">
     <img src="images/logo/chak_loading.gif" alt="loading" class="loading-img">
-  </div>
-  <div id="contents" class="hidden">
+  </div> -->
+  <!-- <div id="contents" class="hidden"> -->
     <header class="index container-fluid p-0 m-0 fixed-top">
       <nav class="navbar navbar-expand-lg px-4 py-3 m-0 navbar-dark" id="nav">
         <a class="navbar-brand text-uppercase h1" href="index.html">
@@ -51,13 +54,16 @@
             <li class="nav-item px-3">
               <a class="nav-link" href="contact.html" id="nav-text">Contact</a>
             </li>
-          </ul>
+            <li class="username">
+              <p><span></span></p>
+             </li>
+            </ul>
           <button type="button" class="btn btn-outline-light ml-3 rounded-0 btn-login" data-toggle="modal"
-            data-target="#exampleModal">Log in</button>
+            data-target="#LoginModal">Log in</button>
         </div>
       </nav>
     </header>
-    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    <div class="modal fade" id="LoginModal" tabindex="-1" role="dialog" aria-labelledby="modalLogin"
       aria-hidden="true">
       <div class="modal-dialog position-relative" role="document">
         <div class="circle position-absolute mx-auto"><img src="images/logo/logo-login-02.png" alt="logo"
@@ -71,23 +77,22 @@
           </div>
           <form>
             <div class="form-group">
-              <label for="exampleInputEmail1">
+              <label for="usernameLogin">
                 <span class="material-icons">
                   local_post_office</span>
-                User Name or Email address</label>
-              <input type="email" class="form-control mt-1" id="exampleInputEmail1" aria-describedby="emailHelp"
+                User Name</label>
+              <input type="name" class="form-control mt-1" id="usernameLogin"
                 placeholder="Enter  User name or Email">
             </div>
             <div class="form-group">
-              <label for="exampleInputPassword1">
+              <label for="passwordLogin">
                 <span class="material-icons">
                   vpn_key
                 </span>
                 Password</label>
-              <input type="password" class="form-control mt-1" id="exampleInputPassword1" placeholder="Password">
+              <input type="password" class="form-control mt-1" id="passwordLogin" placeholder="Password"  autocomplete="off">
             </div>
-            <button type="submit" class="btn btn-secondary w-100 mt-3"><a href="personalaccount.html"
-                class="text-white">Log in</a></button>
+            <input type="button" class="btn btn-secondary w-100 mt-3" id="submitLogin" onclick="location.href='personalaccount.html'"value="Log in">
           </form>
           <div class="modal-footer text-center mx-auto">
             <p>Looking to <a href="#"> create an account ?</a></p>
@@ -95,45 +100,8 @@
         </div>
       </div>
     </div>
-    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-      aria-hidden="true">
-      <div class="modal-dialog position-relative" role="document">
-        <div class="circle position-absolute mx-auto"><img src="images/logo/logo-login-02.png" alt="logo"
-            class="logo-login"></div>
-        <div class="modal-content ">
-          <div class="modal-header position-relative">
-            <button type="button" class="close m-0 p-0 text-right position-absolute" data-dismiss="modal"
-              aria-label="Close" style="width: 100%; right: 20px;">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <form>
-            <div class="form-group">
-              <label for="exampleInputEmail1">
-                <span class="material-icons">
-                  local_post_office</span>
-                User Name or Email address</label>
-              <input type="email" class="form-control mt-1" id="exampleInputEmail1" aria-describedby="emailHelp"
-                placeholder="Enter  User name or Email">
-            </div>
-            <div class="form-group">
-              <label for="exampleInputPassword1">
-                <span class="material-icons">
-                  vpn_key
-                </span>
-                Password</label>
-              <input type="password" class="form-control mt-1" id="exampleInputPassword1" placeholder="Password">
-            </div>
-            <button type="submit" class="btn btn-secondary w-100 mt-3"><a href="personalaccount.html"
-                class="text-white">Log in</a></button>
-          </form>
-          <div class="modal-footer text-center mx-auto">
-            <p>Looking to <a href="#"> create an account ?</a></p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+
+    <div id="carouselLogin" class="carousel slide" data-ride="carousel">
       <a class="circle2" type="button" href="menu.html">
         <span class="texts">
           <div class="icon-1">
@@ -307,7 +275,7 @@
             <img src="" alt="">
           </div>
         </div>
-      </div>
+      <!-- </div> -->
     </footer>
   </div>
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
