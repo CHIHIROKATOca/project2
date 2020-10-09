@@ -7,7 +7,7 @@ onload = function() {
 
     //add the data from cookie to html
     const userSpan =  document.querySelector('.username span');
-    userSpan.textContent = username;
+    userSpan.textContent = `Welcome! ${username}`;
 
     //check the role to get access to the nav-item
 
