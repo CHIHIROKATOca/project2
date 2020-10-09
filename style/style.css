@@ -924,6 +924,9 @@ a.form-Edit{
     font-size: larger;
     color: white;
 }
+.username.personal{
+    color:rgb(72, 71, 66);
+}
 
 li.username {
     margin: 0;
