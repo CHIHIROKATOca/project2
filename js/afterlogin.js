@@ -10,7 +10,7 @@ onload = function() {
     userSpan.textContent = `Welcome! ${username}`;
 
     const logOutButton = document.getElementById("logOutBtn");
-    logOutButton.addEventListener("click", () =>{
+    logOutButton.addEventListener("click", function(){
         var date1 = new Date();
         //1970年1月1日00:00:00の日付データをセットする
         date1.setTime(0);
@@ -18,7 +18,7 @@ onload = function() {
         document.cookie = "counts=;expires="+date1.toGMTString();
         //ページを再読み込みする
         location.reload();
-        })
+        },false)
     }
 
 
