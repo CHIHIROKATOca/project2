@@ -100,6 +100,10 @@ nav ul li.current {
     margin: 0;
     padding: 0;
 }
+.navbar li{
+    padding: 0;
+    margin: 0;
+}
 .collapse .navbar-collapse{
     background-color:green;
 }
@@ -915,8 +919,27 @@ a.form-Edit{
 }
 .username{
     margin:20px auto;
+    padding: 0;
     font-weight: 400;
     font-size: larger;
+}
+.username2{
+    margin:20px auto;
+    padding: 0;
+    font-weight: 400;
+    font-size: larger;
+}
+
+li.username {
+    margin: 0;
+    padding: 8px;
+    vertical-align: middle;
+    height: auto;
+}
+
+span{
+    margin: 0;
+    padding: 0;
 }
 .account-edit{
     line-height: 1.3rem;
