@@ -1584,3 +1584,11 @@ input[name=tabs]+label {
     padding-left: 5px;
     font-weight: 300;
 }
+
+#orderModal{
+    text-align: center;
+}
+
+.modal-dialog{
+    position: relative;
+}
